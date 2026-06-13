@@ -5,5 +5,5 @@
     inputs.flake-parts.flakeModules.modules
   ];
   
-  system = [ "x86_64-linux" ];
+  systems = [ "x86_64-linux" ];
 }

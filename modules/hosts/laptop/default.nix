@@ -13,7 +13,7 @@
             system-pipewire
             system-printing
 
-            users-Avotosui
+            users-avotosui
         ]; 
 
         boot = {
@@ -25,7 +25,7 @@
             kernelPackages = pkgs.linuxPackages_latest; 
         }; 
 
-        networking.hostName = "laptop"
+        networking.hostName = "laptop"; 
         
 
         services = {
@@ -37,7 +37,7 @@
             };
         }; 
 
-        system.stateVersion = "26.05"; 
+        system.stateVersion = "26.04"; 
     }; 
 
     flake.nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
@@ -47,8 +47,8 @@
             inputs.home-manager.nixosModules.home-manager {
                 home-manager = {
                     useGlobalPkgs = true; 
-                    useUserPkgs = true; 
-                    users.Avotosui = self.modules.homeManager.users-Avotosui; 
+                    useUserPackages = true; 
+                    users.avotosui = self.modules.homeManager.users-avotosui; 
                 }; 
             }
         ]; 

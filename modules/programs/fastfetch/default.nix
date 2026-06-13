@@ -1,5 +1,5 @@
 {
-    flake.modules.nixos.programs-fastfetch = { pkgs, ... }: 
+    flake.modules.homeManager.programs-fastfetch = { pkgs, ... }: 
     {
         home.packages = with pkgs; [ fastfetch ]; 
     }; 

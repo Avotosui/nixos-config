@@ -1,7 +1,7 @@
-{ self, ... }
+{ self, ... }: 
 {
-    flake.modules.nixos.users-Avotosui = {
-        users.users.Avotosui = {
+    flake.modules.nixos.users-avotosui = {
+        users.users.avotosui = {
             isNormalUser = true; 
             extraGroups = [
                 "networkmanager"
@@ -10,15 +10,15 @@
         }; 
     }; 
 
-    flake.modules.homeManager.users-Avotosui = {
+    flake.modules.homeManager.users-avotosui = {
         imports = with self.modules.homeManager; [
             programs-fastfetch
             programs-git
         ]; 
 
         home = {
-            username = "Avotosui"; 
-            homeDirectory = "home/Avotosui"; 
+            username = "avotosui"; 
+            homeDirectory = "/home/avotosui"; 
             stateVersion = "26.05"; 
         }; 
     }; 

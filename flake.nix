@@ -4,15 +4,16 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nix-26.05";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    }
+    }; 
   };
 
-  outputs = inputs: inputs.flake-parts.lib.mkFlake
+  outputs = inputs: 
+    inputs.flake-parts.lib.mkFlake
     { inherit inputs; }
     (inputs.import-tree ./modules);
 }

@@ -3,7 +3,7 @@
     perSystem = { system, ... }: 
     {
         overlayAttrs = {
-            stable = import input.nixpkgs-stable {
+            stable = import inputs.nixpkgs-stable {
                 inherit system; 
             }; 
         }; 
