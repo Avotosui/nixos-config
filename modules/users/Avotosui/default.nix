@@ -3,6 +3,7 @@
     flake.modules.nixos.users-avotosui = {
         users.users.avotosui = {
             isNormalUser = true; 
+            initialPassword = "temp"; 
             extraGroups = [
                 "networkmanager"
                 "wheel"
