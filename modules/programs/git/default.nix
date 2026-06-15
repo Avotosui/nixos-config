@@ -10,6 +10,8 @@
             settings = {
                 user.name = "Avotosui"; 
                 user.email = "REDACTED"; 
+
+                init.defaultBranch = "main"; 
             }; 
         }; 
     }; 
