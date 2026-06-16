@@ -5,6 +5,8 @@
         imports = with self.modules.nixos; [
             desktops-plasma
 
+            fonts-jetbrainsmono
+
             programs-git
             programs-vim
 
@@ -26,7 +28,6 @@
         }; 
 
         networking.hostName = "laptop"; 
-        
 
         services = {
             libinput.enable = true; 
