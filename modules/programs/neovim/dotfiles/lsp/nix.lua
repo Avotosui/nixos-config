@@ -5,14 +5,14 @@ return {
     settings = {
         nix = {
             binary = "nix", 
-	    maxMemoryMB = nil, 
-	    flake = {
+	        maxMemoryMB = nil, 
+	        flake = {
                 autoEvalInputs = false, 
-		autoArchive = false, 
+		        autoArchive = false, 
             }, 
         }, 
-	["nil"] = {
-	    formatting = { command = { "alejandra" } }, 
+	    ["nil"] = {
+	        formatting = { command = { "alejandra" } }, 
         }, 
     }, 
 }
