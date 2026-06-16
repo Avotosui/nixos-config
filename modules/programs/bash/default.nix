@@ -1,12 +1,12 @@
 {
-    flake.modules.homeManager.programs-bash = {
-        programs.bash = {
-            enable = true; 
+  flake.modules.homeManager.programs-bash = {
+    programs.bash = {
+      enable = true;
 
-            shellOptions = [
-                "globstar"
-                "failglob"
-            ]; 
-        }; 
-    }; 
+      shellOptions = [
+        "globstar"
+        "failglob"
+      ];
+    };
+  };
 }

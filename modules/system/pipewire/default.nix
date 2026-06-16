@@ -1,16 +1,16 @@
 {
-    flake.modules.nixos.system-pipewire = {
-        security.rtkit.enable = true; 
+  flake.modules.nixos.system-pipewire = {
+    security.rtkit.enable = true;
 
-        services.pipewire = {
-            enable = true; 
+    services.pipewire = {
+      enable = true;
 
-            pulse.enable = true; 
+      pulse.enable = true;
 
-            alsa = {
-                enable = true; 
-                support32Bit = true; 
-            }; 
-        }; 
-    }; 
+      alsa = {
+        enable = true;
+        support32Bit = true;
+      };
+    };
+  };
 }

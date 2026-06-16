@@ -1,30 +1,34 @@
 {
-    flake.modules.homeManager.programs-neovim = { config, lib, pkgs, ... }: 
-    {
-        programs.neovim = {
-            enable = true; 
-            defaultEditor = true; 
+  flake.modules.homeManager.programs-neovim = {
+    config,
+    lib,
+    pkgs,
+    ...
+  }: {
+    programs.neovim = {
+      enable = true;
+      defaultEditor = true;
 
-            initLua = builtins.readFile ./dotfiles/init.lua; 
+      initLua = builtins.readFile ./dotfiles/init.lua;
 
-            plugins = with pkgs.vimPlugins; [
-                mini-nvim
-                render-markdown-nvim
+      plugins = with pkgs.vimPlugins; [
+        mini-nvim
+        render-markdown-nvim
 
-                nvim-treesitter.withAllGrammars
-            ]; 
-        }; 
+        nvim-treesitter.withAllGrammars
+      ];
+    };
 
-        home.file."./.config/nvim/lua" = {
-            source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lua; 
-        }; 
+    home.file."./.config/nvim/lua" = {
+      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lua;
+    };
 
-        home.file."./.config/nvim/lsp" = {
-            source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lsp; 
-        }; 
+    home.file."./.config/nvim/lsp" = {
+      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lsp;
+    };
 
-        home.file."./.config/nvim/after" = {
-            source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/after; 
-        }; 
-    }; 
+    home.file."./.config/nvim/after" = {
+      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/after;
+    };
+  };
 }

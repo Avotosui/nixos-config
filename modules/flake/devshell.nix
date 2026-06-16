@@ -1,16 +1,16 @@
 {
-    perSystem = { pkgs, ... }: {
-        devShells.default = pkgs.mkShell {
-            strictDeps = true; 
+  perSystem = {pkgs, ...}: {
+    devShells.default = pkgs.mkShell {
+      strictDeps = true;
 
-            nativeBuildInputs = with pkgs; [
-                alejandra
-                nil
+      nativeBuildInputs = with pkgs; [
+        alejandra
+        nil
 
-                bash-language-server
+        bash-language-server
 
-                lua-language-server
-            ]; 
-        }; 
-    }; 
+        lua-language-server
+      ];
+    };
+  };
 }
