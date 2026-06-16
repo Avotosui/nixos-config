@@ -1,16 +1,16 @@
 return {
-    cmd = { "lua-language-server" }, 
-    filetypes = { "lua" }, 
-    root_markers = { ".luarc.json", ".git" }, 
+    cmd = { "lua-language-server" },
+    filetypes = { "lua" },
+    root_markers = { ".luarc.json", ".git" },
     settings = {
         Lua = {
-            runtime = { version = "LuaJIT" }, 
-	    telemetry = { enable = false }, 
-	    format = {
+            runtime = { version = "LuaJIT" },
+            telemetry = { enable = false },
+            format = {
                 defaultConfig = {
-                    quote_style = "double", 
-	        }, 
-            }, 
-        }, 
-    }, 
+                    quote_style = "double",
+                },
+            },
+        },
+    },
 }
