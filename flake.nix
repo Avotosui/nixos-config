@@ -6,6 +6,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
 
+    nixos-wsl = {
+      url = "github:nix-community/nixos-wsl/main"; 
+      inputs.nixpkgs.follows = "nixpkgs"; 
+    }; 
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
