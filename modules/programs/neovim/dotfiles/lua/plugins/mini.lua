@@ -3,8 +3,8 @@ MiniNotify.setup({
     content = {
         format = function(notif)
             return notif.msg
-	end,
-    }, 
+        end,
+    },
 })
 
 local MiniCompletion = require("mini.completion")
