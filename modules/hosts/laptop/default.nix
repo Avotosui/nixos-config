@@ -10,6 +10,7 @@
       fonts-jetbrainsmono
 
       programs-git
+      programs-tree
       programs-vim
 
       system-core

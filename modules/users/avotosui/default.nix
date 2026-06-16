@@ -16,6 +16,7 @@
       programs-fastfetch
       programs-git
       programs-neovim
+      programs-tree
       programs-zen-browser
     ];
 
