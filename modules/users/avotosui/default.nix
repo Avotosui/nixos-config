@@ -15,6 +15,7 @@
         imports = with self.modules.homeManager; [
             programs-fastfetch
             programs-git
+            programs-neovim
             programs-zen-browser
         ]; 
 
