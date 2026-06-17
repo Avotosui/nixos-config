@@ -33,7 +33,7 @@
         directory = {
           style = "bg:#394260";
           format = "[[ $path ](fg:#769ff0 bg:#394260)]($style)";
-          # truncation_length = 3;
+          truncation_length = 99; 
           # truncation_symbol = ".../";
         };
 

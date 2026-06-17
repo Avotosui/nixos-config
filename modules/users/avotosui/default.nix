@@ -12,8 +12,11 @@
 
   flake.modules.homeManager.users-avotosui = {
     imports = with self.modules.homeManager; [
+      desktops-plasma
+
       programs-bash
       programs-fastfetch
+      programs-fzf
       programs-git
       programs-neovim
       programs-starship

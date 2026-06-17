@@ -1,3 +1,4 @@
+{inputs, ...}: 
 {
   flake.modules.nixos.desktops-plasma = {pkgs, ...}: {
     time.timeZone = "America/New_York";
@@ -9,4 +10,13 @@
       desktopManager.plasma6.enable = true;
     };
   };
+
+  flake.modules.homeManager.desktops-plasma = {pkgs, ...}: {
+    imports = [inputs.plasma-manager.homeModules.plasma-manager]; 
+
+    programs.plasma = {
+      enable = true; 
+      overrideConfig = true; 
+    }; 
+  }; 
 }
