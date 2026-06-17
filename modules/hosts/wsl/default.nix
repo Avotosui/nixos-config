@@ -5,11 +5,10 @@
 }: {
   flake.modules.nixos.hosts-wsl = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      fonts-jetbrainsmono
-
       programs-git
       programs-tree
       programs-vim
+      programs-zsh
 
       system-core
 

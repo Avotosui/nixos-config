@@ -17,8 +17,8 @@
     };
 
     plasma-manager = {
-      url = "github:nix-community/plasma-manager"; 
-      inputs.nixpkgs.follows = "nixpkgs"; 
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     zen-browser = {

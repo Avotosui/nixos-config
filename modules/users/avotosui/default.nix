@@ -1,5 +1,5 @@
 {self, ...}: {
-  flake.modules.nixos.users-avotosui = {
+  flake.modules.nixos.users-avotosui = {pkgs, ...}: {
     users.users.avotosui = {
       isNormalUser = true;
       initialPassword = "temp";
@@ -7,6 +7,8 @@
         "networkmanager"
         "wheel"
       ];
+
+      shell = pkgs.zsh;
     };
   };
 
@@ -18,10 +20,12 @@
       programs-fastfetch
       programs-fzf
       programs-git
+      programs-kitty
       programs-neovim
       programs-starship
       programs-tree
       programs-zen-browser
+      programs-zsh
     ];
 
     home = {

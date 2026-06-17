@@ -10,8 +10,10 @@
       fonts-jetbrainsmono
 
       programs-git
+      programs-kitty
       programs-tree
       programs-vim
+      programs-zsh
 
       system-core
       system-networkmanager
