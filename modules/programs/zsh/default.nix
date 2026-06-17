@@ -13,7 +13,7 @@
       setOptions = [
         "GLOB_STAR_SHORT"
         "NOMATCH"
-      ]; 
+      ];
     };
   };
 }
