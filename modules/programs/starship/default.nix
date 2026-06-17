@@ -51,7 +51,7 @@
 
         status = {
           style = "fg:#a0a9cb bg:#1d2230";
-          disabled = false; 
+          disabled = false;
           format = "[ $common_meaning$signal_name$int ]($style)";
 
           pipestatus = true;

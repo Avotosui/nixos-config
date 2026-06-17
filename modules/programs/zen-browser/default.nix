@@ -7,5 +7,7 @@
     programs.zen-browser = {
       enable = true;
     };
+
+    home.sessionVariables.browser = "zen-browser";
   };
 }
