@@ -16,6 +16,8 @@
       programs-zsh
 
       system-core
+      system-garbagecollection
+      system-locale
       system-networkmanager
       system-pipewire
       system-printing

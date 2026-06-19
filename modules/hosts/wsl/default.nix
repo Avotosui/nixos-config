@@ -11,6 +11,8 @@
       programs-zsh
 
       system-core
+      system-garbagecollection
+      system-locale
 
       users-avotosui
     ];
