@@ -4,7 +4,7 @@
       enable = true;
 
       settings = {
-        format = ''          [░▒▓](#a3aed2)[  ](bg:#a3aed2 fg:#090c0c)[](bg:#769ff0 fg:#a3aed2)$username$hostname$shlvl[](fg:#769ff0 bg:#394260)$directory[](fg:#394260 bg:#212736)$git_branch$git_status[](fg:#212736 bg:#1d2230)$status[ ](fg:#1d2230)
+        format = ''          [░▒▓](#a3aed2)[  ](bg:#a3aed2 fg:#090c0c)[](bg:#769ff0 fg:#a3aed2)$username$hostname$shlvl[](fg:#769ff0 bg:#394260)$directory[](fg:#394260 bg:#212736)$git_branch$git_status[](fg:#212736 bg:#1d2230)$cmd_duration$status[ ](fg:#1d2230)
           $character'';
 
         username = {
@@ -61,16 +61,13 @@
           pipestatus_segment_format = "[$common_meaning$signal_name$int]($style)";
         };
 
-        # status = {
-        #   style = "fg:#212736 bg:#1d2230";
-        #   disabled = false;
-        #   format = "\\[[($common_meaning$signal_name )$int]($style)\\] ";
-        #
-        #   pipestatus = true;
-        #   pipestatus_separator = " | ";
-        #   pipestatus_format = "\\[$pipestatus\\] 󰜴 \\[[($common_meaning$signal_name )$int]($style)\\] ";
-        #   pipestatus_segment_format = "[($common_meaning$signal_name )$int]($style)";
-        # };
+        cmd_duration = {
+          style = "fg:#a0a9cb bg:#1d2230";
+          format = "[ $duration ]($style)";
+
+          min_time = 0;
+          show_milliseconds = true;
+        };
       };
     };
   };

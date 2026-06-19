@@ -2,19 +2,19 @@
   flake.modules.nixos.system-garbagecollection = {
     nix = {
       optimise = {
-        automatic = true; 
+        automatic = true;
 
-	dates = "weekly";
-	persistent = true;
-      }; 
+        dates = "weekly";
+        persistent = true;
+      };
 
       gc = {
-        automatic = true; 
+        automatic = true;
 
-	dates = "weekly"; 
-	persistent = true; 
+        dates = "weekly";
+        persistent = true;
 
-	options = "--delete-older-than 7d";
+        options = "--delete-older-than 7d";
       };
     };
   };
