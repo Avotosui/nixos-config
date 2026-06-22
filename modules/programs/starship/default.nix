@@ -4,8 +4,8 @@
       enable = true;
 
       settings = {
-        format = ''          [░▒▓](#a3aed2)[  ](bg:#a3aed2 fg:#090c0c)[](bg:#769ff0 fg:#a3aed2)$username$hostname$shlvl[](fg:#769ff0 bg:#394260)$directory[](fg:#394260 bg:#212736)$git_branch$git_status[](fg:#212736 bg:#1d2230)$cmd_duration$status[ ](fg:#1d2230)
-          $character'';
+        format = ''          [░▒▓](#a3aed2)[  ](bg:#a3aed2 fg:#090c0c)[](bg:#769ff0 fg:#a3aed2)$username$hostname[](fg:#769ff0 bg:#394260)$directory[](fg:#394260 bg:#212736)$git_branch$git_status[](fg:#212736 bg:#1d2230)$cmd_duration$status[ ](fg:#1d2230)
+          $shlvl$character'';
 
         username = {
           style_user = "fg:#e3e5e5 bg:#769ff0";
@@ -22,12 +22,13 @@
         };
 
         shlvl = {
-          style = "fg:#e3e5e5 bg:#769ff0";
+          style = "fg:#a3aed2";
+          # style = "fg:#e3e5e5 bg:#769ff0";
           disabled = false;
           symbol = "❯";
           repeat = true;
           repeat_offset = 1;
-          format = "[[$symbol ](fg:#e3e5e5 bg:#769ff0)]($style)";
+          format = "[$symbol]($style)";
         };
 
         directory = {
@@ -67,6 +68,10 @@
 
           min_time = 0;
           show_milliseconds = true;
+        };
+
+        character = {
+          format = "[❯ ](fg:#769ff0)";
         };
       };
     };
