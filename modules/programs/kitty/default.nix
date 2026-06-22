@@ -15,19 +15,19 @@
       };
     };
 
-    home.sessionVariables.TERMINAL = "kitty";
-
-    xdg.terminal-exec = {
-      enable = true;
-      settings = {
-        default = ["kitty.desktop"];
+    xdg = {
+      mimeApps = {
+        enable = true;
+        defaultApplications = {
+          "x-scheme-handler/terminal" = ["kitty.desktop"];
+        };
       };
-    };
 
-    xdg.mimeApps = {
-      enable = true;
-      defaultApplications = {
-        "x-scheme-handler/terminal" = ["kitty.desktop"];
+      terminal-exec = {
+        enable = true;
+        settings = {
+          default = ["kitty.desktop"];
+        };
       };
     };
   };
