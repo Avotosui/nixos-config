@@ -1,18 +1,23 @@
 return {
-    cmd = { "nil" }, 
-    filetypes = { "nix" }, 
-    root_markers = { "flake.nix", ".git" }, 
+    cmd = { "nixd" },
+    filetypes = { "nix" },
+    root_markers = { "flake.nix", ".git" },
     settings = {
-        nix = {
-            binary = "nix", 
-	        maxMemoryMB = nil, 
-	        flake = {
-                autoEvalInputs = false, 
-		        autoArchive = false, 
-            }, 
-        }, 
-	    ["nil"] = {
-	        formatting = { command = { "alejandra" } }, 
-        }, 
-    }, 
+        nixd = {
+            nixpkgs = {
+                expr = "import <nixpkgs> {}",
+            },
+            formatting = {
+                command = { "alejandra" },
+            },
+            options = {
+                nixos = {
+                    expr = "(builtins.getFlake (toString ./.)).nixosConfigurations.<hostname>.options",
+                },
+                home_manager = {
+                    expr = "(builtins.getFlake (toString ./.)).nixosConfigurations.<hostname>.options.homeManager.users.type.getSubOptions []",
+                },
+            },
+        },
+    },
 }

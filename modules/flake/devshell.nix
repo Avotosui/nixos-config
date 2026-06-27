@@ -5,7 +5,7 @@
 
       nativeBuildInputs = with pkgs; [
         alejandra
-        nil
+        nixd
 
         bash-language-server
 

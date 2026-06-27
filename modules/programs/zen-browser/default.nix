@@ -1,7 +1,4 @@
-{
-  inputs,
-  ...
-}: {
+{inputs, ...}: {
   flake.modules.homeManager.programs-zen-browser = {
     imports = [
       inputs.zen-browser.homeModules.beta

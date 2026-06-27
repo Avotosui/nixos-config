@@ -24,6 +24,7 @@
       programs-neovim
       programs-redshift
       programs-starship
+      programs-tmux
       programs-tree
       programs-zen-browser
       programs-zsh
