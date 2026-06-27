@@ -22,6 +22,7 @@
       programs-git
       programs-kitty
       programs-neovim
+      programs-redshift
       programs-starship
       programs-tree
       programs-zen-browser
