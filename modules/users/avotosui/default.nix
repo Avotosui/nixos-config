@@ -17,6 +17,7 @@
       desktops-plasma
 
       programs-bash
+      programs-bitwarden
       programs-fastfetch
       programs-fzf
       programs-git
