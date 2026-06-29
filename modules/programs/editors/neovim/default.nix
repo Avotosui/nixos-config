@@ -12,10 +12,13 @@
 
       plugins = with pkgs.vimPlugins; [
         mini-nvim
+        orgmode
         render-markdown-nvim
 
         nvim-treesitter.withAllGrammars
       ];
+
+      extraPackages = with pkgs; [ripgrep];
     };
 
     home.file."./.config/nvim/lua" = {
