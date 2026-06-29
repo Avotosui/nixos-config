@@ -14,7 +14,7 @@
 
   flake.modules.homeManager.users-avotosui = {
     imports = with self.modules.homeManager; [
-      programs-desktops-plasma
+      programs-gui-desktopmanagers-plasma
 
       programs-browsers-zen-browser
 
@@ -36,6 +36,7 @@
 
       programs-utilities-fastfetch
       programs-utilities-fzf
+      programs-utilities-onefetch
       programs-utilities-tree
     ];
 

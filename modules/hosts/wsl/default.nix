@@ -5,10 +5,10 @@
 }: {
   flake.modules.nixos.hosts-wsl = {
     imports = with self.modules.nixos; [
+      programs-devtools-git
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
-      programs-utilities-git
 
       system-locale
 

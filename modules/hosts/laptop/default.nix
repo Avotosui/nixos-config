@@ -5,7 +5,7 @@
 }: {
   flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      programs-desktops-plasma
+      programs-gui-desktopmanagers-plasma
 
       programs-devtools-git
       programs-terminals-kitty
