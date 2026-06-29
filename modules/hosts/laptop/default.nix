@@ -7,7 +7,7 @@
     imports = with self.modules.nixos; [
       programs-desktops-plasma
 
-      programs-utilities-git
+      programs-devtools-git
       programs-terminals-kitty
       programs-editors-vim
       programs-shells-zsh

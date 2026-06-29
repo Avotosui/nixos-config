@@ -1,5 +1,5 @@
 {
-  flake.modules.homeManager.programs-utilities-tmux = {
+  flake.modules.homeManager.programs-devtools-tmux = {
     programs.tmux = {
       enable = true;
 

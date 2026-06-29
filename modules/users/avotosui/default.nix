@@ -20,6 +20,9 @@
 
       programs-customization-starship
 
+      programs-devtools-git
+      programs-devtools-tmux
+
       programs-editors-neovim
 
       programs-security-bitwarden
@@ -33,8 +36,6 @@
 
       programs-utilities-fastfetch
       programs-utilities-fzf
-      programs-utilities-git
-      programs-utilities-tmux
       programs-utilities-tree
     ];
 

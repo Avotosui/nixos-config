@@ -1,9 +1,9 @@
 {
-  flake.modules.nixos.programs-utilities-git = {pkgs, ...}: {
+  flake.modules.nixos.programs-devtools-git = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [git];
   };
 
-  flake.modules.homeManager.programs-utilities-git = {
+  flake.modules.homeManager.programs-devtools-git = {
     programs.git = {
       enable = true;
       settings = {
