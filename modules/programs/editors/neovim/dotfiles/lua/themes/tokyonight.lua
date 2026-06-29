@@ -1,3 +1,4 @@
+-- hhttps://github.com/folke/tokyonight.nvim 
 require("tokyonight").setup({
     style = "night",
     light_style = "day",
@@ -12,4 +13,4 @@ require("tokyonight").setup({
         floats = "dark",
     },
 })
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd("colorscheme tokyonight")

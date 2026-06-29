@@ -18,6 +18,7 @@
         nvim-treesitter.withAllGrammars
 
         tokyonight-nvim
+        kanagawa-nvim
       ];
 
       extraPackages = with pkgs; [ripgrep];
