@@ -25,6 +25,11 @@
 
       programs-editors-neovim
 
+      programs-media-ffmpeg
+      programs-media-gimp
+      programs-media-magick
+      programs-media-vlc
+
       programs-security-bitwarden
 
       programs-services-redshift
@@ -35,6 +40,7 @@
       programs-terminals-kitty
 
       programs-utilities-fastfetch
+      programs-utilities-file
       programs-utilities-fzf
       programs-utilities-onefetch
       programs-utilities-tree
