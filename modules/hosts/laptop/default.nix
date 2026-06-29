@@ -5,22 +5,19 @@
 }: {
   flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      desktops-plasma
+      programs-desktops-plasma
 
-      fonts-jetbrainsmono
+      programs-utilities-git
+      programs-terminals-kitty
+      programs-editors-vim
+      programs-shells-zsh
 
-      programs-git
-      programs-kitty
-      programs-tree
-      programs-vim
-      programs-zsh
-
-      system-core
-      system-garbagecollection
+      system-fonts-jetbrainsmono
+      system-hardware-network
+      system-hardware-audio
       system-locale
-      system-networkmanager
-      system-pipewire
-      system-printing
+      system-peripherals-bluetooth
+      system-peripherals-printing
 
       users-avotosui
     ];

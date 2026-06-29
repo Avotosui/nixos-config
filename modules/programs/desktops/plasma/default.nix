@@ -1,5 +1,5 @@
 {inputs, ...}: {
-  flake.modules.nixos.desktops-plasma = {
+  flake.modules.nixos.programs-desktops-plasma = {
     time.timeZone = "America/New_York";
 
     i18n.defaultLocale = "en_US.UTF-8";
@@ -10,7 +10,7 @@
     };
   };
 
-  flake.modules.homeManager.desktops-plasma = {
+  flake.modules.homeManager.programs-desktops-plasma = {
     imports = [inputs.plasma-manager.homeModules.plasma-manager];
 
     programs.plasma = {

@@ -3,15 +3,13 @@
   inputs,
   ...
 }: {
-  flake.modules.nixos.hosts-wsl = {pkgs, ...}: {
+  flake.modules.nixos.hosts-wsl = {
     imports = with self.modules.nixos; [
-      programs-git
-      programs-tree
-      programs-vim
-      programs-zsh
+      programs-editors-vim
+      programs-packagemanagers-nix
+      programs-shells-zsh
+      programs-utilities-git
 
-      system-core
-      system-garbagecollection
       system-locale
 
       users-avotosui

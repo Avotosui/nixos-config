@@ -14,21 +14,28 @@
 
   flake.modules.homeManager.users-avotosui = {
     imports = with self.modules.homeManager; [
-      desktops-plasma
+      programs-desktops-plasma
 
-      programs-bash
-      programs-bitwarden
-      programs-fastfetch
-      programs-fzf
-      programs-git
-      programs-kitty
-      programs-neovim
-      programs-redshift
-      programs-starship
-      programs-tmux
-      programs-tree
-      programs-zen-browser
-      programs-zsh
+      programs-browsers-zen-browser
+
+      programs-customization-starship
+
+      programs-editors-neovim
+
+      programs-security-bitwarden
+
+      programs-services-redshift
+
+      programs-shells-bash
+      programs-shells-zsh
+
+      programs-terminals-kitty
+
+      programs-utilities-fastfetch
+      programs-utilities-fzf
+      programs-utilities-git
+      programs-utilities-tmux
+      programs-utilities-tree
     ];
 
     home = {

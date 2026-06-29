@@ -100,7 +100,7 @@ in {
         "dom.battery.enabled" = false;
 
         "gfx.webrender.all" = true;
-        "network.http.http3.enabled" = true;
+        "network.http.http3.enable" = true;
         "network.socket.ip_addr_any.disabled" = true; # disallow bind to 0.0.0.0
       };
     };

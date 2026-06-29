@@ -3,7 +3,7 @@
     environment.systemPackages = with pkgs; [git];
   };
 
-  flake.modules.homeManager.programs-git = {
+  flake.modules.homeManager.programs-utilities-git = {
     programs.git = {
       enable = true;
       settings = {
