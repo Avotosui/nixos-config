@@ -18,6 +18,10 @@
 
       programs-browsers-zen-browser
 
+      programs-compression-p7zip
+      programs-compression-xz
+      programs-compression-zip
+
       programs-customization-starship
 
       programs-devtools-git
