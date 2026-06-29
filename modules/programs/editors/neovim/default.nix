@@ -16,6 +16,8 @@
         render-markdown-nvim
 
         nvim-treesitter.withAllGrammars
+
+        tokyonight-nvim
       ];
 
       extraPackages = with pkgs; [ripgrep];
