@@ -6,7 +6,6 @@
   flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
     imports = with self.modules.nixos; [
       programs-gui-desktopmanagers-plasma
-      programs-gui-windowmanagers-hyprland
 
       programs-devtools-git
       programs-terminals-kitty
@@ -46,6 +45,47 @@
     system.stateVersion = "26.04";
   };
 
+  flake.modules.homeManager.hosts-laptop = {
+    imports = with self.modules.homeManager; [
+      programs-gui-desktopmanagers-plasma
+
+      programs-browsers-zen-browser
+
+      programs-compression-p7zip
+      programs-compression-xz
+      programs-compression-zip
+
+      programs-customization-starship
+
+      programs-devtools-git
+      programs-devtools-tmux
+
+      programs-editors-neovim
+
+      programs-media-ffmpeg
+      programs-media-gimp
+      programs-media-magick
+      programs-media-vlc
+
+      programs-security-bitwarden
+
+      programs-services-redshift
+
+      programs-shells-bash
+      programs-shells-zsh
+
+      programs-terminals-kitty
+
+      programs-utilities-fastfetch
+      programs-utilities-file
+      programs-utilities-fzf
+      programs-utilities-onefetch
+      programs-utilities-tree
+
+      users-avotosui
+    ];
+  };
+
   flake.nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.modules.nixos.hosts-laptop
@@ -55,7 +95,7 @@
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
-          users.avotosui = self.modules.homeManager.users-avotosui;
+          users.avotosui = self.modules.homeManager.hosts-laptop;
         };
       }
     ];

@@ -27,6 +27,37 @@
     system.stateVersion = "26.04";
   };
 
+  flake.modules.homeManager.hosts-wsl = {
+    imports = with self.modules.homeManager; [
+      programs-compression-p7zip
+      programs-compression-xz
+      programs-compression-zip
+
+      programs-customization-starship
+
+      programs-devtools-git
+      programs-devtools-tmux
+
+      programs-editors-neovim
+
+      programs-media-ffmpeg
+      programs-media-magick
+
+      programs-shells-bash
+      programs-shells-zsh
+
+      programs-terminals-kitty
+
+      programs-utilities-fastfetch
+      programs-utilities-file
+      programs-utilities-fzf
+      programs-utilities-onefetch
+      programs-utilities-tree
+
+      users-avotosui
+    ];
+  };
+
   flake.nixosConfigurations.wsl = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.modules.nixos.hosts-wsl
@@ -38,7 +69,7 @@
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
-          users.avotosui = self.modules.homeManager.users-avotosui;
+          users.avotosui = self.modules.homeManager.hosts-wsl;
         };
       }
     ];
