@@ -5,6 +5,8 @@
 }: {
   flake.modules.nixos.hosts-wsl = {
     imports = with self.modules.nixos; [
+      programs-windowmanagers-hyprland
+
       programs-devtools-git
       programs-editors-vim
       programs-packagemanagers-nix
@@ -29,6 +31,8 @@
 
   flake.modules.homeManager.hosts-wsl = {
     imports = with self.modules.homeManager; [
+      programs-windowmanagers-hyprland
+
       programs-compression-p7zip
       programs-compression-xz
       programs-compression-zip

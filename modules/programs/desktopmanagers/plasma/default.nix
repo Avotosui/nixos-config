@@ -1,5 +1,5 @@
 {inputs, ...}: {
-  flake.modules.nixos.programs-gui-desktopmanagers-plasma = {
+  flake.modules.nixos.programs-desktopmanagers-plasma = {
     services = {
       displayManager.plasma-login-manager.enable = true;
       desktopManager.plasma6.enable = true;
