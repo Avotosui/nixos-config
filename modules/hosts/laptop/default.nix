@@ -8,9 +8,10 @@
       programs-gui-desktopmanagers-plasma
 
       programs-devtools-git
-      programs-terminals-kitty
       programs-editors-vim
+      programs-packagemanagers-nix
       programs-shells-zsh
+      programs-terminals-kitty
 
       system-fonts-jetbrainsmono
       system-hardware-network
