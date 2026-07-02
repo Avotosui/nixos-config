@@ -83,6 +83,8 @@
       programs-utilities-onefetch
       programs-utilities-tree
 
+      system-xdg
+
       users-avotosui
     ];
   };
