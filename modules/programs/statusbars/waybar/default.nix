@@ -1,5 +1,7 @@
 {
-  flake.modules.nixos.programs-statusbars-waybar = {pkgs, ...}: {
-    environment.systemPackages = with pkgs; [waybar];
+  flake.modules.homeManager.programs-statusbars-waybar = {
+    programs.waybar = {
+      enable = true;
+    };
   };
 }

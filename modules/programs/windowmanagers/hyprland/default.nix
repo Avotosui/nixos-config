@@ -13,6 +13,16 @@
       systemd.enable = false;
       package = null;
       portalPackage = null;
+
+      settings = {
+        "$mod" = "SUPER";
+        "$terminal" = "kitty";
+
+        exec-once = [
+          "celestia-shell"
+          "$terminal"
+        ];
+      };
     };
   };
 }
