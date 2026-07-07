@@ -40,12 +40,13 @@
       programs-customization-starship
 
       programs-devtools-git
-      programs-devtools-tmux
 
       programs-editors-neovim
 
       programs-media-ffmpeg
       programs-media-magick
+
+      programs-multiplexers-tmux
 
       programs-shells-bash
       programs-shells-zsh

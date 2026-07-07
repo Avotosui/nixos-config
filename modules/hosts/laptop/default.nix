@@ -60,7 +60,6 @@
       programs-customization-starship
 
       programs-devtools-git
-      programs-devtools-tmux
 
       programs-editors-neovim
 
@@ -70,6 +69,8 @@
       programs-media-gimp
       programs-media-magick
       programs-media-vlc
+
+      programs-multiplexers-tmux
 
       programs-security-bitwarden
 
