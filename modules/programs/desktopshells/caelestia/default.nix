@@ -1,5 +1,4 @@
-{inputs, ...}:
-{
+{inputs, ...}: {
   flake.modules.homeManager.programs-desktopshells-caelestia = {
     imports = [
       inputs.caelestia-shell.homeManagerModules.default
