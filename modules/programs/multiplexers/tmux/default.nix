@@ -9,6 +9,9 @@
         tokyo-night-tmux
       ];
 
+      extraConfig = ''
+        set -ag terminal-overrides ",xterm-256color:RGB"
+      '';
     };
   };
 }

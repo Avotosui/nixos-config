@@ -6,7 +6,7 @@
     };
   };
 
-  flake.modules.homeManager.programs-gui-desktopmanagers-plasma = {
+  flake.modules.homeManager.programs-desktopmanagers-plasma = {
     imports = [inputs.plasma-manager.homeModules.plasma-manager];
 
     programs.plasma = {

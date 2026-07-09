@@ -41,6 +41,8 @@
 
       programs-devtools-git
 
+      programs-filemanagers-yazi
+
       programs-editors-neovim
 
       programs-media-ffmpeg
