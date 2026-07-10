@@ -7,7 +7,7 @@
     imports = with self.modules.nixos; [
       programs-desktopmanagers-plasma
 
-      programs-devtools-git
+      programs-development-git
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
@@ -60,11 +60,11 @@
 
       programs-customization-starship
 
-      programs-devtools-git
+      programs-development-file
+      programs-development-git
+      programs-development-tree
 
       programs-editors-neovim
-
-      programs-filemanagers-yazi
 
       programs-media-ffmpeg
       programs-media-gimp
@@ -72,6 +72,9 @@
       programs-media-vlc
 
       programs-multiplexers-tmux
+
+      programs-organization-kondo
+      programs-organization-yazi
 
       programs-security-bitwarden
 
@@ -83,10 +86,8 @@
       programs-terminals-kitty
 
       programs-utilities-fastfetch
-      programs-utilities-file
       programs-utilities-fzf
       programs-utilities-onefetch
-      programs-utilities-tree
 
       system-xdg
 

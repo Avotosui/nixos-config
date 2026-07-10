@@ -7,7 +7,7 @@
     imports = with self.modules.nixos; [
       programs-windowmanagers-hyprland
 
-      programs-devtools-git
+      programs-development-git
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
@@ -41,14 +41,15 @@
 
       programs-devtools-git
 
-      programs-filemanagers-yazi
-
       programs-editors-neovim
 
       programs-media-ffmpeg
       programs-media-magick
 
       programs-multiplexers-tmux
+
+      programs-organization-kondo
+      programs-organization-yazi
 
       programs-shells-bash
       programs-shells-zsh
