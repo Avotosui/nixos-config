@@ -5,7 +5,7 @@
 }: {
   flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      programs-desktopmanagers-plasma
+      programs-desktop-environments-plasma
 
       programs-development-git
       programs-editors-vim
@@ -49,8 +49,8 @@
   flake.modules.homeManager.hosts-laptop = {
     imports = with self.modules.homeManager; [
       programs-windowmanagers-hyprland
-      programs-desktopshells-caelestia
-      programs-desktopmanagers-plasma
+      programs-desktop-shells-caelestia
+      programs-desktop-environments-plasma
 
       programs-browsers-zen
 
