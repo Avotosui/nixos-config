@@ -3,7 +3,7 @@
     programs.tmux = {
       enable = true;
       focusEvents = true;
-      terminal = "screen-256color";
+      terminal = "tmux-256color";
 
       plugins = with pkgs.tmuxPlugins; [
         tokyo-night-tmux
