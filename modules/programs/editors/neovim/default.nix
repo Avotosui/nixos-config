@@ -24,16 +24,8 @@
       extraPackages = with pkgs; [ripgrep];
     };
 
-    home.file."./.config/nvim/lua" = {
-      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lua;
-    };
-
-    home.file."./.config/nvim/lsp" = {
-      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/lsp;
-    };
-
-    home.file."./.config/nvim/after" = {
-      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/after;
-    };
+    xdg.configFile."nvim/lua".source = ./dotfiles/lua;
+    xdg.configFile."nvim/lsp".source = ./dotfiles/lsp;
+    xdg.configFile."nvim/after".source = ./dotfiles/after;
   };
 }
