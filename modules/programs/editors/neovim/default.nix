@@ -21,7 +21,10 @@
         kanagawa-nvim
       ];
 
-      extraPackages = with pkgs; [ripgrep];
+      extraPackages = with pkgs; [
+        ripgrep
+        jdk
+      ];
     };
 
     xdg.configFile."nvim/lua".source = ./dotfiles/lua;

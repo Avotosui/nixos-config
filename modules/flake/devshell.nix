@@ -10,8 +10,6 @@
         bash-language-server
 
         lua-language-server
-
-        zsh
       ];
 
       shellHook = ''

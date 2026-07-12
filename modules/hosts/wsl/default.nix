@@ -39,7 +39,9 @@
 
       programs-customization-starship
 
-      programs-devtools-git
+      programs-development-file
+      programs-development-git
+      programs-development-tree
 
       programs-editors-neovim
 
@@ -57,10 +59,8 @@
       programs-terminals-kitty
 
       programs-utilities-fastfetch
-      programs-utilities-file
       programs-utilities-fzf
       programs-utilities-onefetch
-      programs-utilities-tree
 
       users-avotosui
     ];
