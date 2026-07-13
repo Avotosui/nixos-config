@@ -23,7 +23,6 @@
 
       extraPackages = with pkgs; [
         ripgrep
-        jdk
       ];
     };
 
