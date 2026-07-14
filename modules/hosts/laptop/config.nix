@@ -3,35 +3,54 @@
   inputs,
   ...
 }: {
-  flake.modules.nixos.hosts-wsl = {
+  flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      programs-windowmanagers-hyprland
+      programs-desktop-environments-plasma
 
       programs-development-git
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
+      programs-terminals-kitty
 
+      system-fonts-jetbrainsmono
+      system-hardware-network
+      system-hardware-audio
       system-locale
+      system-peripherals-bluetooth
+      system-peripherals-printing
 
       users-avotosui
     ];
 
-    wsl = {
-      enable = true;
-      defaultUser = "avotosui";
+    boot = {
+      loader.grub = {
+        enable = true;
+        device = "/dev/sda";
+        useOSProber = true;
+      };
+      kernelPackages = pkgs.linuxPackages_latest;
     };
 
-    networking.hostName = "wsl";
+    networking.hostName = "laptop";
 
-    nixpkgs.hostPlatform = "x86_64-linux";
+    services = {
+      libinput.enable = true;
+
+      xserver.xkb = {
+        layout = "us";
+        variant = "";
+      };
+    };
 
     system.stateVersion = "26.04";
   };
 
-  flake.modules.homeManager.hosts-wsl = {
+  flake.modules.homeManager.hosts-laptop = {
     imports = with self.modules.homeManager; [
-      programs-windowmanagers-hyprland
+      programs-desktop-environments-plasma
+
+      programs-browsers-zen
 
       programs-compression-p7zip
       programs-compression-xz
@@ -46,12 +65,18 @@
       programs-editors-neovim
 
       programs-media-ffmpeg
+      programs-media-gimp
       programs-media-magick
+      programs-media-vlc
 
       programs-multiplexers-tmux
 
       programs-organization-kondo
       programs-organization-yazi
+
+      programs-security-bitwarden
+
+      programs-services-redshift
 
       programs-shells-bash
       programs-shells-zsh
@@ -62,22 +87,22 @@
       programs-utilities-fzf
       programs-utilities-onefetch
 
+      system-xdg
+
       users-avotosui
     ];
   };
 
-  flake.nixosConfigurations.wsl = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
     modules = [
-      self.modules.nixos.hosts-wsl
-
-      inputs.nixos-wsl.nixosModules.default
+      self.modules.nixos.hosts-laptop
 
       inputs.home-manager.nixosModules.home-manager
       {
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
-          users.avotosui = self.modules.homeManager.hosts-wsl;
+          users.avotosui = self.modules.homeManager.hosts-laptop;
         };
       }
     ];

@@ -1,10 +1,11 @@
-{self, ...}: {
+{
   flake.modules.nixos.users-avotosui = {pkgs, ...}: {
     users.users.avotosui = {
       isNormalUser = true;
       initialPassword = "temp";
       extraGroups = [
         "networkmanager"
+        "uninput"
         "wheel"
       ];
 

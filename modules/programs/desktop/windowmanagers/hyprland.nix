@@ -1,5 +1,5 @@
 {
-  flake.modules.nixos.programs-windowmanagers-hyprland = {
+  flake.modules.nixos.programs-desktop-windowmanagers-hyprland = {
     programs.hyprland = {
       enable = true;
       withUWSM = true;
@@ -7,7 +7,7 @@
     };
   };
 
-  flake.modules.homeManager.programs-windowmanagers-hyprland = {
+  flake.modules.homeManager.programs-desktop-windowmanagers-hyprland = {
     wayland.windowManager.hyprland = {
       enable = true;
       systemd.enable = false;
