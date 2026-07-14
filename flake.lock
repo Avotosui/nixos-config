@@ -127,6 +127,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-master": {
+      "locked": {
+        "lastModified": 1784051375,
+        "narHash": "sha256-vZH63y4ODdNxTf+tfERX1XepLSC7Aavt/LJhmnQ4dxw=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c49cfe13957887ecfced9345a9b799602b9e962c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-stable": {
       "locked": {
         "lastModified": 1784011430,
@@ -173,6 +189,7 @@
         "nixos-hardware": "nixos-hardware",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-stable": "nixpkgs-stable",
         "plasma-manager": "plasma-manager",
         "zen-browser": "zen-browser"
