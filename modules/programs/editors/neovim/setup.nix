@@ -11,6 +11,7 @@
       initLua = builtins.readFile ./dotfiles/init.lua;
 
       plugins = with pkgs.vimPlugins; [
+        friendly-snippets
         mini-nvim
         orgmode
         render-markdown-nvim
