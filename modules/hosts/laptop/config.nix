@@ -11,7 +11,6 @@
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
-      programs-terminals-kitty
 
       system-fonts-jetbrainsmono
       system-hardware-network

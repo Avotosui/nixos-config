@@ -1,8 +1,4 @@
 {
-  flake.modules.nixos.programs-terminals-ghostty = {pkgs, ...}: {
-    environment.systemPackages = with pkgs; [ghostty];
-  };
-
   flake.modules.homeManager.programs-ghostty = {
     programs.ghostty = {
       enable = true;
