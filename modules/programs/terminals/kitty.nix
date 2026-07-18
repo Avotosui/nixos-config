@@ -5,11 +5,6 @@
 
       font.name = "JetBrainsMono Nerd Font";
 
-      shellIntegration = {
-        enableBashIntegration = true;
-        enableZshIntegration = true;
-      };
-
       themeFile = "tokyo_night_night";
     };
 
