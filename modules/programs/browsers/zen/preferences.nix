@@ -7,15 +7,16 @@ in {
   flake.modules.homeManager.programs-browsers-zen = {
     programs.zen-browser.policies = {
       Preferences = mkLockedAttrs {
+        "accessibility.typeaheadfind.manual" = false;
+
         "browser.aboutConfig.showWarning" = false;
         "browser.gesture.swipe.left" = "";
         "browser.gesture.swipe.right" = "";
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
         "browser.tabs.groups.enabled" = true;
         "browser.tabs.hoverPreview.enabled" = true;
-        # swap to false, true to make new tabs insert after current active tab
         "browser.tabs.insertRelatedAfterCurrent" = true;
-        "browser.tabs.insertAfterCurrent" = false;
+        "browser.tabs.insertAfterCurrent" = true;
         "browser.tabs.selectOwnerOnClose" = false;
         "browser.tabs.warnOnClose" = true;
         "browser.topsites.contile.enabled" = false;
@@ -38,7 +39,7 @@ in {
 
         "network.cookie.cookieBehavior" = 5;
         "network.http.http3.enable" = true;
-        "network.socket.ip_addr_any.disabled" = true; # disallow bind to 0.0.0.0
+        "network.socket.ip_addr_any.disabled" = true;
 
         "privacy.firstparty.isolate" = true;
         "privacy.resistFingerprinting" = true;
@@ -49,14 +50,13 @@ in {
         "privacy.resistFingerprinting.randomization.daily_reset.private.enabled" = true;
         "privacy.spoof_english" = 1;
 
+        "zen.tabs.select-recently-used-on-close" = false;
         "zen.urlbar.show-newtab-button-top" = false;
         "zen.view.use-single-toolbar" = false;
         "zen.urlbar.replace-newtab" = false;
         "zen.workspaces.continue-where-left-off" = true;
-        "zen.workspaces.natural-scroll" = true;
         "zen.view.compact.hide-tabbar" = true;
         "zen.view.compact.hide-toolbar" = true;
-        "zen.view.compact.animate-sidebar" = false;
         "zen.welcome-screen.seen" = true;
         "zen.urlbar.behavior" = "float";
       };
