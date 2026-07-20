@@ -3,14 +3,14 @@
     programs.zsh.enable = true;
   };
 
-  flake.modules.homeManager.programs-shells-zsh = {
+  flake.modules.homeManager.programs-shells-zsh = {config, ...}: {
     home.shell.enableZshIntegration = true;
 
     programs.zsh = {
       enable = true;
       enableCompletion = true;
-      dotDir = ".config/zsh";
-      initExtra = builtins.readFile ./.zshrc;
+      dotDir = "${config.xdg.configHome}/zsh";
+      initContent = builtins.readFile ./.zshrc;
       history.ignoreDups = true;
 
       setOptions = [
