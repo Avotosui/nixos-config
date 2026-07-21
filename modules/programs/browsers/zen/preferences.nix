@@ -55,6 +55,7 @@ in {
         "zen.view.use-single-toolbar" = false;
         "zen.urlbar.replace-newtab" = false;
         "zen.workspaces.continue-where-left-off" = true;
+        "zen.workspaces.natural-scroll" = false;
         "zen.view.compact.hide-tabbar" = true;
         "zen.view.compact.hide-toolbar" = true;
         "zen.welcome-screen.seen" = true;
