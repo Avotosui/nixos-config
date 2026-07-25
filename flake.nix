@@ -1,6 +1,7 @@
 {
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
 
     nixpkgs-master.url = "github:nixos/nixpkgs/master";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
