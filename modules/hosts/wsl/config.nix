@@ -49,6 +49,9 @@
       programs-organization-kondo
       programs-organization-yazi
 
+      programs-security-age
+      programs-security-sops
+
       programs-shells-bash
       programs-shells-zsh
 
