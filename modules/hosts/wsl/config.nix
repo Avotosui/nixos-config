@@ -8,6 +8,7 @@
       programs-development-git
       programs-editors-vim
       programs-packagemanagers-nix
+      programs-security-sops
       programs-shells-zsh
 
       system-locale
