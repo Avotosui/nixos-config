@@ -45,6 +45,7 @@
       programs-media-ffmpeg
       programs-media-magick
 
+      programs-monitoring-btop
       programs-monitoring-fastfetch
       programs-monitoring-onefetch
 
