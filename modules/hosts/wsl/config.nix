@@ -45,6 +45,9 @@
       programs-media-ffmpeg
       programs-media-magick
 
+      programs-monitoring-fastfetch
+      programs-monitoring-onefetch
+
       programs-multiplexers-tmux
 
       programs-organization-kondo
@@ -56,9 +59,7 @@
       programs-shells-bash
       programs-shells-zsh
 
-      programs-utilities-fastfetch
       programs-utilities-fzf
-      programs-utilities-onefetch
 
       users-avotosui
       system-xdg

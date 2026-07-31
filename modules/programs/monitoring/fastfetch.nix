@@ -1,5 +1,5 @@
 {
-  flake.modules.homeManager.programs-utilities-fastfetch = {pkgs, ...}: {
+  flake.modules.homeManager.programs-monitoring-fastfetch = {pkgs, ...}: {
     home.packages = with pkgs; [fastfetch];
   };
 }
