@@ -1,6 +1,5 @@
 {
   self,
-  config,
   inputs,
   ...
 }: {
@@ -10,11 +9,15 @@
     ];
 
     sops = {
-      age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
+      age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key"];
     };
   };
 
-  flake.modules.homeManager.programs-security-sops = {pkgs, ...}: {
+  flake.modules.homeManager.programs-security-sops = {
+    config,
+    pkgs,
+    ...
+  }: {
     imports = [
       inputs.sops-nix.homeManagerModules.sops
     ];

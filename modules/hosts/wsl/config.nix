@@ -61,6 +61,7 @@
       programs-utilities-onefetch
 
       users-avotosui
+      system-xdg
     ];
   };
 
