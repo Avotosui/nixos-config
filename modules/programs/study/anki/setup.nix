@@ -15,11 +15,9 @@
       ];
     };
 
-    sops = {
-      secrets = {
-        "anki/username" = {};
-        "anki/key" = {};
-      };
+    sops.secrets = {
+      "anki/username" = {};
+      "anki/key" = {};
     };
   };
 }
