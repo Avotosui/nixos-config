@@ -56,6 +56,8 @@
 
       programs-security-age
       programs-security-sops
+      programs-security-ssh
+      programs-security-sshagent
 
       programs-shells-bash
       programs-shells-zsh
