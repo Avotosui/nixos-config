@@ -5,84 +5,38 @@
 }: {
   flake.modules.nixos.hosts-wsl = {
     imports = with self.modules.nixos; [
+      hosts-wsl-users-avotosui
+
+      programs-packagemanagers-nix
+
       programs-development-git
       programs-editors-vim
-      programs-packagemanagers-nix
       programs-security-sops
       programs-shells-zsh
 
       system-locale
-
-      users-avotosui
+      system-users-groups
+      system-users-homemanager
     ];
-
-    wsl = {
-      enable = true;
-      defaultUser = "avotosui";
-    };
 
     networking.hostName = "wsl";
 
     nixpkgs.hostPlatform = "x86_64-linux";
 
-    system.stateVersion = "26.04";
-  };
+    services.udev.enable = true;
 
-  flake.modules.homeManager.hosts-wsl = {
-    imports = with self.modules.homeManager; [
-      programs-compression-p7zip
-      programs-compression-xz
-      programs-compression-zip
+    system.stateVersion = "26.05";
 
-      programs-customization-starship
-
-      programs-development-file
-      programs-development-git
-      programs-development-tree
-
-      programs-editors-neovim
-
-      programs-media-ffmpeg
-      programs-media-magick
-
-      programs-monitoring-btop
-      programs-monitoring-fastfetch
-      programs-monitoring-onefetch
-
-      programs-multiplexers-tmux
-
-      programs-organization-kondo
-      programs-organization-yazi
-
-      programs-security-age
-      programs-security-sops
-      programs-security-ssh
-      programs-security-sshagent
-
-      programs-shells-bash
-      programs-shells-zsh
-
-      programs-utilities-fzf
-
-      users-avotosui
-      system-xdg
-    ];
+    wsl = {
+      enable = true;
+      defaultUser = "avotosui";
+    };
   };
 
   flake.nixosConfigurations.wsl = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.modules.nixos.hosts-wsl
-
       inputs.nixos-wsl.nixosModules.default
-
-      inputs.home-manager.nixosModules.home-manager
-      {
-        home-manager = {
-          useGlobalPkgs = true;
-          useUserPackages = true;
-          users.avotosui = self.modules.homeManager.hosts-wsl;
-        };
-      }
     ];
   };
 }
