@@ -1,5 +1,9 @@
 {
-  flake.modules.homeManager.programs-study-anki = {config, pkgs, ...}: {
+  flake.modules.homeManager.programs-study-anki = {
+    config,
+    pkgs,
+    ...
+  }: {
     programs.anki = {
       enable = true;
       theme = "dark";
