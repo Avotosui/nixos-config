@@ -1,12 +1,21 @@
 {self, ...}: {
-  flake.modules.nixos.hosts-wsl-users-avotosui = {pkgs, ...}: {
+  flake.modules.nixos.hosts-wsl-users-avotosui = {
+    config,
+    pkgs,
+    ...
+  }: {
     home-manager.users.avotosui = self.modules.homeManager.hosts-wsl-users-avotosui;
 
     users.users.avotosui = {
       isNormalUser = true;
-      initialPassword = "temp";
+      hashedPasswordFile = config.sops.secrets."avotosui/user-password".path;
       extraGroups = ["wheel"];
       shell = pkgs.zsh;
+    };
+
+    sops.secrets = {
+      "avotosui/user-password" = {};
+      "avotosui/user-password".neededForUsers = true;
     };
   };
 
