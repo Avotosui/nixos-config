@@ -16,8 +16,17 @@
       };
     };
 
+    programs.ssh.settings."github.com" = {
+      HostName = "github.com";
+      User = "git";
+      IdentityFile = config.sops.secrets."git/private-ssh-key".path;
+      IdentitiesOnly = true;
+      AddKeysToAgent = "yes";
+    };
+
     sops.secrets = {
       "git/user" = {};
+      "git/private-ssh-key" = {};
     };
   };
 }

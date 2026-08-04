@@ -3,32 +3,22 @@
     programs.ssh = {
       enable = true;
       enableDefaultConfig = false;
-      settings = {
-        "*" = {
-          ForwardAgent = false;
-          AddKeysToAgent = "yes";
-          Compression = false;
-          ServerAliveInterval = 0;
-          ServerAliveCountMax = 3;
-          HashKnownHosts = true;
-          UserKnownHostsFile = "~/.ssh/known_hosts";
-          ControlMaster = "no";
-          ControlPath = "~/.ssh/master-%r@%n:%p";
-          ControlPersist = "no";
-        };
-        "github.com" = {
-          HostName = "github.com";
-          User = "git";
-          IdentityFile = config.sops.secrets."git/private-ssh-key".path;
-          IdentitiesOnly = true;
-          ControlMaster = "auto";
-          ControlPersist = "10m";
-        };
-      };
-    };
+      settings."*" = {
+        ForwardAgent = false;
+        Compression = false;
+        HashKnownHosts = true;
 
-    sops.secrets = {
-      "git/private-ssh-key" = {};
+        ServerAliveInterval = 30;
+        ServerAliveCountMax = 3;
+
+        AddKeysToAgent = "no";
+
+        UserKnownHostsFile = "~/.ssh/known_hosts";
+
+        ControlMaster = "no";
+        ControlPath = "~/.ssh/master-%r@%n:%p";
+        ControlPersist = "no";
+      };
     };
   };
 }
