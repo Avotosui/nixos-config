@@ -3,14 +3,14 @@
   inputs,
   ...
 }: {
-  flake.modules.nixos.programs-security-sops = {
+  flake.modules.nixos.programs-security-sops = {config, ...}: {
     imports = [
       inputs.sops-nix.nixosModules.sops
     ];
 
     sops = {
       age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key"];
-      defaultSopsFile = "${self}/secrets/root/secrets.yaml";
+      defaultSopsFile = "${self}/secrets/root/${config.networking.hostName}/secrets.yaml";
     };
   };
 
