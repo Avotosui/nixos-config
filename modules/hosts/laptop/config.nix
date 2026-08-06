@@ -9,7 +9,6 @@
 
       programs-desktop-environments-plasma
 
-      programs-development-git
       programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh

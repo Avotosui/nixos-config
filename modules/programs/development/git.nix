@@ -1,9 +1,5 @@
-{
-  flake.modules.nixos.programs-development-git = {pkgs, ...}: {
-    environment.systemPackages = with pkgs; [git];
-  };
-
-  flake.modules.homeManager.programs-development-git = {config, ...}: {
+{self, ...}: {
+  flake.modules.homeManager.programs-development-git = {config, osConfig, ...}: {
     programs.git = {
       enable = true;
       settings = {
@@ -25,8 +21,12 @@
     };
 
     sops.secrets = {
-      "git/user" = {};
-      "git/private-ssh-key" = {};
+      "git/user" = {
+        sopsFile = "${self}/secrets/root/${osConfig.networking.hostName}/secrets.yaml";
+      };
+      "git/private-ssh-key" = {
+        sopsFile = "${self}/secrets/root/${osConfig.networking.hostName}/secrets.yaml";
+      };
     };
   };
 }

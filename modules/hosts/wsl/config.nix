@@ -9,7 +9,6 @@
 
       programs-packagemanagers-nix
 
-      programs-development-git
       programs-editors-vim
       programs-security-sops
       programs-shells-zsh
