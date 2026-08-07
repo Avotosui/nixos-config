@@ -13,6 +13,11 @@ creation_rules:
       - age:
           - *admin
           - *root-wsl
+  - path_regex: ^secrets/home/wsl/.+$
+    key_groups:
+      - age:
+          - *admin
+          - *avotosui-wsl
   - path_regex: ^secrets/home/[^/]+$
     key_groups:
       - age:

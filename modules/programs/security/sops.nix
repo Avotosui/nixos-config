@@ -16,6 +16,7 @@
 
   flake.modules.homeManager.programs-security-sops = {
     config,
+    osConfig,
     pkgs,
     ...
   }: {
@@ -27,7 +28,7 @@
 
     sops = {
       age.keyFile = "${config.xdg.configHome}/sops/age/keys.txt";
-      defaultSopsFile = "${self}/secrets/home/secrets.yaml";
+      defaultSopsFile = "${self}/secrets/home/${osConfig.networking.hostName}/secrets.yaml";
     };
   };
 }
