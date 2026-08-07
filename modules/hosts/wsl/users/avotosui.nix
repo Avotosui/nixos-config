@@ -49,6 +49,7 @@
       programs-shells-bash
       programs-shells-zsh
 
+      programs-utilities-bat
       programs-utilities-fzf
       programs-utilities-zoxide
       programs-utilities-file

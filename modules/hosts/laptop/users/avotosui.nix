@@ -55,6 +55,7 @@
 
       programs-terminals-kitty
 
+      programs-utilities-bat
       programs-utilities-file
       programs-utilities-fzf
       programs-utilities-tree
