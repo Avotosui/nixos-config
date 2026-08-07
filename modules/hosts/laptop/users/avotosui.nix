@@ -31,16 +31,15 @@
 
       programs-customization-starship
 
-      programs-development-file
-      programs-development-git
-      programs-development-tree
-
       programs-editors-neovim
 
       programs-media-ffmpeg
       programs-media-gimp
       programs-media-magick
       programs-media-vlc
+
+      programs-monitoring-fastfetch
+      programs-monitoring-onefetch
 
       programs-multiplexers-tmux
 
@@ -56,9 +55,11 @@
 
       programs-terminals-kitty
 
-      programs-utilities-fastfetch
+      programs-utilities-file
       programs-utilities-fzf
-      programs-utilities-onefetch
+      programs-utilities-tree
+
+      programs-versioncontrol-git
 
       system-hardware-network
       system-hardware-uinput

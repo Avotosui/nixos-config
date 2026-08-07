@@ -27,10 +27,6 @@
 
       programs-customization-starship
 
-      programs-development-file
-      programs-development-git
-      programs-development-tree
-
       programs-editors-neovim
 
       programs-media-ffmpeg
@@ -55,6 +51,10 @@
 
       programs-utilities-fzf
       programs-utilities-zoxide
+      programs-utilities-file
+      programs-utilities-tree
+
+      programs-versioncontrol-git
 
       system-users-groups
       system-xdg
