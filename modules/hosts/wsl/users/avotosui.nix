@@ -54,6 +54,7 @@
       programs-shells-zsh
 
       programs-utilities-fzf
+      programs-utilities-zoxide
 
       system-users-groups
       system-xdg
