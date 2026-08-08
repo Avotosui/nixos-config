@@ -1,4 +1,4 @@
-{
+{self, ...}: {
   flake.modules.homeManager.programs-study-anki = {
     config,
     pkgs,
@@ -20,8 +20,12 @@
     };
 
     sops.secrets = {
-      "anki/username" = {};
-      "anki/key" = {};
+      "anki/username" = {
+        sopsFile = "${self}/secrets/home/secrets.yaml";
+      };
+      "anki/key" = {
+        sopsFile = "${self}/secrets/home/secrets.yaml";
+      };
     };
   };
 }
