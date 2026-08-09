@@ -9,15 +9,13 @@
     programs.zsh = {
       enable = true;
       enableCompletion = true;
-      autosuggestion.enable = true;
+      autosuggestion = {
+        enable = true;
+        strategy = [];
+      };
       dotDir = "${config.xdg.configHome}/zsh";
       initContent = builtins.readFile ./.zshrc;
-      history = {
-        extended = true;
-        ignoreDups = true;
-        save = 10000;
-        size = 10000;
-      };
+      history.size = 0;
 
       setOptions = [
         "EXTENDED_GLOB"

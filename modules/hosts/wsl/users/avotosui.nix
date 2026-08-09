@@ -49,10 +49,11 @@
       programs-shells-bash
       programs-shells-zsh
 
+      programs-utilities-atuin
       programs-utilities-bat
-      programs-utilities-fzf
       programs-utilities-zoxide
       programs-utilities-file
+      programs-utilities-fzf
       programs-utilities-tree
 
       programs-versioncontrol-git
