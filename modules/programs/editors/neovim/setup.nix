@@ -6,14 +6,11 @@
   }: {
     programs.neovim = {
       enable = true;
-      defaultEditor = true;
-
-      initLua = builtins.readFile ./dotfiles/init.lua;
+      sideloadInitLua = true;
 
       plugins = with pkgs.vimPlugins; [
         friendly-snippets
         mini-nvim
-        orgmode
         render-markdown-nvim
 
         nvim-treesitter.withAllGrammars
@@ -27,8 +24,9 @@
       ];
     };
 
-    xdg.configFile."nvim/lua".source = ./dotfiles/lua;
-    xdg.configFile."nvim/lsp".source = ./dotfiles/lsp;
-    xdg.configFile."nvim/after".source = ./dotfiles/after;
+    xdg.configFile."nvim" = {
+      recursive = true;
+      source = ./dotfiles;
+    };
   };
 }
