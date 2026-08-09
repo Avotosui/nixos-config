@@ -9,5 +9,6 @@ require("config.options")
 
 require("plugins.lsp")
 require("plugins.mini")
+require("plugins.netrw")
 require("plugins.rendermarkdown")
 require("plugins.treesitter")

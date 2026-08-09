@@ -11,6 +11,7 @@
       plugins = with pkgs.vimPlugins; [
         friendly-snippets
         mini-nvim
+        netrw-nvim
         render-markdown-nvim
 
         nvim-treesitter.withAllGrammars
