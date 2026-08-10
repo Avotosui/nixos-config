@@ -14,7 +14,6 @@
         strategy = [];
       };
       dotDir = "${config.xdg.configHome}/zsh";
-      initContent = builtins.readFile ./.zshrc;
       history.size = 0;
 
       setOptions = [
