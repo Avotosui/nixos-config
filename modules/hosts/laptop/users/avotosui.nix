@@ -46,6 +46,7 @@
       programs-multiplexers-tmux
 
       programs-organization-kondo
+      programs-organization-trash
       programs-organization-yazi
 
       programs-security-bitwarden
