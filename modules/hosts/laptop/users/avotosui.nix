@@ -33,10 +33,12 @@
 
       programs-editors-neovim
 
-      programs-multimedia-videos-ffmpeg
       programs-multimedia-images-gimp
       programs-multimedia-images-magick
+      programs-multimedia-videos-ffmpeg
+      programs-multimedia-videos-mpv
       programs-multimedia-videos-vlc
+      programs-multimedia-videos-ytdlp
 
       programs-monitoring-fastfetch
       programs-monitoring-onefetch

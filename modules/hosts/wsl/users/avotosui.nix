@@ -29,8 +29,8 @@
 
       programs-editors-neovim
 
-      programs-multimedia-videos-ffmpeg
       programs-multimedia-images-magick
+      programs-multimedia-videos-ffmpeg
 
       programs-monitoring-btop
       programs-monitoring-fastfetch
