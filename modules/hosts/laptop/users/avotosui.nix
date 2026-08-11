@@ -66,6 +66,8 @@
 
       programs-versioncontrol-git
 
+      programs-vpns-proton
+
       system-hardware-network
       system-hardware-uinput
       system-users-groups
