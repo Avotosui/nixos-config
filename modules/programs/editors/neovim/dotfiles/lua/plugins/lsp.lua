@@ -14,4 +14,5 @@ vim.lsp.enable({
     "taplo",
     "vscode-css-language-server",
     "vtsls",
+    "yaml-language-server",
 })
