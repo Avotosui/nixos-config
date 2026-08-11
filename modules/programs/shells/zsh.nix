@@ -8,12 +8,12 @@
 
     programs.zsh = {
       enable = true;
+      dotDir = "${config.xdg.configHome}/zsh";
       enableCompletion = true;
       autosuggestion = {
         enable = true;
         strategy = [];
       };
-      dotDir = "${config.xdg.configHome}/zsh";
       history.size = 0;
 
       setOptions = [
@@ -21,6 +21,10 @@
         "GLOB_STAR_SHORT"
         "NOMATCH"
       ];
+
+      shellAliases = {
+        rm = "trash-put";
+      };
     };
   };
 }
