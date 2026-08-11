@@ -20,7 +20,7 @@
         ytdl-raw-options = ''sub-lang="en,tr",write-sub=,write-auto-sub='';
       };
 
-      scripts = 
+      scripts =
         (
           with pkgs.mpvScripts; [
             mpris

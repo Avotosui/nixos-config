@@ -3,7 +3,7 @@
     programs.atuin = {
       enable = true;
 
-      flags = [ "--disable-up-arrow" ];
+      flags = ["--disable-up-arrow"];
 
       settings = {
         ai.enabled = false;
