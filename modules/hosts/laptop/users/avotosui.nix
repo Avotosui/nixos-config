@@ -45,6 +45,9 @@
 
       programs-multiplexers-tmux
 
+      programs-organization-dua
+      programs-organization-dust
+      programs-organization-gdu
       programs-organization-kondo
       programs-organization-trash
       programs-organization-yazi
