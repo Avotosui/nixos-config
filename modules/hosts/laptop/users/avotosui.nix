@@ -45,11 +45,14 @@
 
       programs-multiplexers-tmux
 
+      programs-organization-bat
       programs-organization-dua
       programs-organization-dust
+      programs-organization-file
       programs-organization-gdu
       programs-organization-kondo
       programs-organization-trash
+      programs-organization-tree
       programs-organization-yazi
 
       programs-security-bitwarden
@@ -62,10 +65,7 @@
       programs-terminals-kitty
 
       programs-utilities-atuin
-      programs-utilities-bat
-      programs-utilities-file
       programs-utilities-fzf
-      programs-utilities-tree
 
       programs-versioncontrol-git
 

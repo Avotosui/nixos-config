@@ -38,9 +38,13 @@
 
       programs-multiplexers-tmux
 
+      programs-organization-bat
+      programs-organization-file
       programs-organization-kondo
       programs-organization-trash
+      programs-organization-tree
       programs-organization-yazi
+      programs-organization-zoxide
 
       programs-security-age
       programs-security-sops
@@ -51,11 +55,7 @@
       programs-shells-zsh
 
       programs-utilities-atuin
-      programs-utilities-bat
-      programs-utilities-zoxide
-      programs-utilities-file
       programs-utilities-fzf
-      programs-utilities-tree
 
       programs-versioncontrol-git
 
