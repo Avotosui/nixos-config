@@ -1,5 +1,5 @@
 {
-  flake.modules.homeManager.programs-services-redshift = {
+  flake.modules.homeManager.programs-productivity-redshift = {
     services.redshift = {
       enable = true;
       tray = true;

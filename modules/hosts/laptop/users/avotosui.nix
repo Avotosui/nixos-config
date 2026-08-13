@@ -55,9 +55,9 @@
       programs-organization-tree
       programs-organization-yazi
 
-      programs-security-bitwarden
+      programs-productivity-redshift
 
-      programs-services-redshift
+      programs-security-bitwarden
 
       programs-shells-bash
       programs-shells-zsh
