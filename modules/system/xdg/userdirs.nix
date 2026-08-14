@@ -4,15 +4,15 @@
       enable = true;
       createDirectories = true;
 
-      desktop = "${config.home.homeDirectory}/userdirs/desktop";
-      documents = "${config.home.homeDirectory}/userdirs/documents";
-      download = "${config.home.homeDirectory}/userdirs/downloads";
-      music = "${config.home.homeDirectory}/userdirs/music";
-      pictures = "${config.home.homeDirectory}/userdirs/pictures";
-      projects = "${config.home.homeDirectory}/userdirs/projects";
-      publicShare = "${config.home.homeDirectory}/userdirs/public";
-      templates = "${config.home.homeDirectory}/userdirs/templates";
-      videos = "${config.home.homeDirectory}/userdirs/videos";
+      desktop = "${config.home.homeDirectory}/userdirs/Desktop";
+      documents = "${config.home.homeDirectory}/userdirs/Documents";
+      download = "${config.home.homeDirectory}/userdirs/Downloads";
+      music = "${config.home.homeDirectory}/userdirs/Music";
+      pictures = "${config.home.homeDirectory}/userdirs/Pictures";
+      projects = "${config.home.homeDirectory}/userdirs/Projects";
+      publicShare = "${config.home.homeDirectory}/userdirs/Public";
+      templates = "${config.home.homeDirectory}/userdirs/Templates";
+      videos = "${config.home.homeDirectory}/userdirs/Videos";
     };
   };
 }
