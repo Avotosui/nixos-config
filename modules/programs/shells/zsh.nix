@@ -21,10 +21,6 @@
         "GLOB_STAR_SHORT"
         "NOMATCH"
       ];
-
-      shellAliases = {
-        rm = "trash-put";
-      };
     };
   };
 }
