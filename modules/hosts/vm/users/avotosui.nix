@@ -40,6 +40,11 @@
       programs-shells-bash
       programs-shells-zsh
 
+      programs-security-age
+      programs-security-sops
+      programs-security-ssh
+      programs-security-sshagent
+
       programs-terminals-kitty
 
       programs-utilities-atuin

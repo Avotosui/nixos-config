@@ -1,28 +1,42 @@
 keys:
   - &admin age1efpanz9atyaqd7rlhzvkhc8g0grwmcsfl6p095lvetxzx3rkrcrqzu9sfc
   - &root-wsl age1ddrda3lq0e3j0qmfnapakcz9agvz9kpjwecm6xv435f2slfxfvwsd9d0nr
+  - &root-vm age13ut99sfvxgyvpr2zr857gk8lv029580x7v9vayvvmfwskmguuunqarrgfu
   - &avotosui-wsl age1cmdk7zhzy5pj3nd2zfsv06m30duk9lp556k9we2pyptlvsn99ywqmfx6fp
+  - &avotosui-vm age1y7glju274pg9nsnkmp2tps02l4eyw5xpvpqmy4j3hg2xuq35zpwq2h0ll8
 creation_rules:
   - path_regex: ^secrets/root/wsl/.+$
     key_groups:
       - age:
           - *admin
           - *root-wsl
+  - path_regex: ^secrets/root/vm/.+$
+    key_groups: 
+      - age:
+        - *admin
+        - *root-vm
   - path_regex: ^secrets/root/[^/]+$
     key_groups:
       - age:
           - *admin
           - *root-wsl
+          - *root-vm
   - path_regex: ^secrets/home/wsl/.+$
     key_groups:
       - age:
           - *admin
           - *avotosui-wsl
+  - path_regex: ^secrets/home/vm/.+$
+    key_groups:
+      - age:
+          - *admin
+          - *avotosui-vm
   - path_regex: ^secrets/home/[^/]+$
     key_groups:
       - age:
           - *admin
           - *avotosui-wsl
+          - *avotosui-vm
   - path_regex: ^secrets/.+$
     key_groups:
       - age:
