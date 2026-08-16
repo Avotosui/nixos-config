@@ -33,6 +33,8 @@
 
     networking.hostName = "vm";
 
+    virtualisation.vmware.guest.enable = true;
+
     services = {
       libinput.enable = true;
 
