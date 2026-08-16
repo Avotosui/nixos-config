@@ -10,6 +10,7 @@
       programs-desktop-environments-plasma
 
       programs-packagemanagers-nix
+      programs-security-sops
       programs-shells-zsh
 
       system-fonts-jetbrainsmono
