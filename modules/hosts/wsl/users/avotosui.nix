@@ -56,6 +56,7 @@
 
       programs-utilities-atuin
       programs-utilities-fzf
+      programs-utilities-nixalien
 
       programs-versioncontrol-git
 

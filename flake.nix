@@ -1,7 +1,9 @@
 {
   inputs = {
+    flake-compat.url = "github:nixos/flake-compat";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
+    nix-index-database.url = "github:nix-community/nix-index-database";
 
     nixpkgs-master.url = "github:nixos/nixpkgs/master";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
@@ -12,6 +14,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-alien = {
+      url = "github:thiagokokada/nix-alien";
+
+      inputs = {
+        flake-compat.follows = "flake-compat";
+        nix-index-database.follows = "nix-index-database";
+        nixpkgs.follows = "nix-index-database/nixpkgs";
+      };
+    };
+
     nixos-hardware = {
       url = "github:nixos/nixos-hardware";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,7 +31,10 @@
 
     nixos-wsl = {
       url = "github:nix-community/nixos-wsl/main";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        flake-compat.follows = "flake-compat";
+        nixpkgs.follows = "nixpkgs";
+      };
     };
 
     plasma-manager = {
