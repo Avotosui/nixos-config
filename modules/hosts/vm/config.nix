@@ -35,7 +35,7 @@
 
     networking.hostName = "vm";
 
-    services.xserver.videoDrivers = [ "vmware" ];
+    services.xserver.videoDrivers = ["vmware"];
     virtualisation.vmware.guest.enable = true;
 
     services = {
