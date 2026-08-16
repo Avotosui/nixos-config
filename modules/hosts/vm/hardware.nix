@@ -1,5 +1,5 @@
 {
-  flake.modules.nixos.hosts-laptop = {lib, ...}: {
+  flake.modules.nixos.hosts-vm = {lib, ...}: {
     boot.initrd.availableKernelModules = [
       "ata_piix"
       "mptspi"

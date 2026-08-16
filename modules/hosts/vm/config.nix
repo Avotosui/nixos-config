@@ -3,20 +3,18 @@
   inputs,
   ...
 }: {
-  flake.modules.nixos.hosts-laptop = {pkgs, ...}: {
+  flake.modules.nixos.hosts-vm = {pkgs, ...}: {
     imports = with self.modules.nixos; [
-      hosts-laptop-users-avotosui
+      hosts-vm-users-avotosui
 
       programs-desktop-environments-plasma
 
-      programs-editors-vim
       programs-packagemanagers-nix
       programs-shells-zsh
 
       system-fonts-jetbrainsmono
       system-hardware-audio
       system-hardware-network
-      system-hardware-uinput
       system-locale
       system-peripherals-bluetooth
       system-peripherals-printing
@@ -33,7 +31,7 @@
       kernelPackages = pkgs.linuxPackages_latest;
     };
 
-    networking.hostName = "laptop";
+    networking.hostName = "vm";
 
     services = {
       libinput.enable = true;
@@ -47,9 +45,9 @@
     system.stateVersion = "26.05";
   };
 
-  flake.nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.vm = inputs.nixpkgs.lib.nixosSystem {
     modules = [
-      self.modules.nixos.hosts-laptop
+      self.modules.nixos.hosts-vm
     ];
   };
 }

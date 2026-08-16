@@ -1,10 +1,10 @@
 {self, ...}: {
-  flake.modules.nixos.hosts-laptop-users-avotosui = {
+  flake.modules.nixos.hosts-vm-users-avotosui = {
     config,
     pkgs,
     ...
   }: {
-    home-manager.users.avotosui = self.modules.homeManager.hosts-laptop-users-avotosui;
+    home-manager.users.avotosui = self.modules.homeManager.hosts-vm-users-avotosui;
 
     users.users.avotosui = {
       isNormalUser = true;
@@ -19,45 +19,23 @@
     };
   };
 
-  flake.modules.homeManager.hosts-laptop-users-avotosui = {
+  flake.modules.homeManager.hosts-vm-users-avotosui = {
     imports = with self.modules.homeManager; [
       programs-desktop-environments-plasma
-
-      programs-browsers-zen
-
-      programs-compression-p7zip
-      programs-compression-xz
-      programs-compression-zip
 
       programs-customization-starship
 
       programs-editors-neovim
 
-      programs-multimedia-images-gimp
       programs-multimedia-images-magick
       programs-multimedia-videos-ffmpeg
-      programs-multimedia-videos-mpv
-      programs-multimedia-videos-vlc
-      programs-multimedia-videos-ytdlp
-
-      programs-monitoring-fastfetch
-      programs-monitoring-onefetch
 
       programs-multiplexers-tmux
 
       programs-organization-bat
-      programs-organization-dua
-      programs-organization-dust
       programs-organization-file
-      programs-organization-gdu
-      programs-organization-kondo
       programs-organization-trash
       programs-organization-tree
-      programs-organization-yazi
-
-      programs-productivity-redshift
-
-      programs-security-bitwarden
 
       programs-shells-bash
       programs-shells-zsh
@@ -66,14 +44,10 @@
 
       programs-utilities-atuin
       programs-utilities-fzf
-      programs-utilities-nixalien
 
       programs-versioncontrol-git
 
-      programs-vpns-proton
-
       system-hardware-network
-      system-hardware-uinput
       system-users-groups
       system-xdg
     ];
