@@ -7,7 +7,7 @@
     imports = with self.modules.nixos; [
       hosts-vm-users-avotosui
 
-      programs-desktop-environments-plasma
+      programs-desktops-noctaliahyprland
 
       programs-packagemanagers-nix
       programs-security-openssh

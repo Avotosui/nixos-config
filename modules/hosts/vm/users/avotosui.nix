@@ -21,7 +21,7 @@
 
   flake.modules.homeManager.hosts-vm-users-avotosui = {
     imports = with self.modules.homeManager; [
-      programs-desktop-environments-plasma
+      programs-desktops-noctaliahyprland
 
       programs-customization-starship
 
