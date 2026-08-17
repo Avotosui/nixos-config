@@ -14,6 +14,7 @@
         "api_token"
         "API_TOKEN"
       ];
+      keymap_mode = "vim-insert";
       prefers_reduced_motion = true;
       search_mode = "fuzzy";
       show_help = false;
@@ -34,7 +35,7 @@
       };
       style = "compact";
       sync.records = true;
-      sync_frequency = "5m";
+      sync_frequency = "1h";
       sync_address = "https://api.atuin.sh";
       theme.name = "tokyo-night";
       tmux.enabled = true;

@@ -2,6 +2,7 @@
   flake.modules.homeManager.programs-utilities-atuin = {config, ...}: {
     programs.atuin = {
       enable = true;
+      daemon.enable = true;
 
       flags = ["--disable-up-arrow"];
 
@@ -11,13 +12,16 @@
       };
     };
 
-    sops.secrets = {
+    sops.secrets = let
+      sopsFile = "${self}/secrets/home/secrets.yaml";
+    in {
       "atuin/key" = {
-        sopsFile = "${self}/secrets/home/secrets.yaml";
+        inherit sopsFile;
       };
       "atuin/session" = {
-        sopsFile = "${self}/secrets/home/secrets.yaml";
+        inherit sopsFile;
       };
     };
+    systemd.user.services.atuin-daemon.Unit.After = ["sops-nix.service"];
   };
 }
