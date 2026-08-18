@@ -4,6 +4,9 @@
       inputs.noctalia-greeter.nixosModules.default
     ];
 
-    programs.noctalia-greeter.enable = true;
+    programs.noctalia-greeter = {
+      enable = true;
+      greeter-args = ''--session "Hyprland (uwsm-managed)"'';
+    };
   };
 }
