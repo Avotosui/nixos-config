@@ -5,6 +5,11 @@
   };
 
   flake.modules.homeManager.programs-desktops-noctaliahyprland = {
+    wayland.windowManager.hyprland = {
+      enable = true;
+      package = null;
+      portalPackage = null;
+    };
     xdg.configFile."hyprland" = {
       recursive = true;
       source = ./dotfiles;
