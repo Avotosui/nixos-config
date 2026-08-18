@@ -36,6 +36,7 @@
       programs-organization-file
       programs-organization-trash
       programs-organization-tree
+      programs-organization-zoxide
 
       programs-shells-bash
       programs-shells-zsh
