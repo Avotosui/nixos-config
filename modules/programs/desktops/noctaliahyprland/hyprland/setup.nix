@@ -1,15 +1,14 @@
 {
   flake.modules.nixos.programs-desktops-noctaliahyprland = {
-    programs.hyprland.enable = true;
+    programs.hyprland = {
+      enable = true;
+      withUWSM = true;
+      xwayland.enable = true;
+    };
     environment.sessionVariables.LIBGL_ALWAYS_SOFTWARE = "1";
   };
 
   flake.modules.homeManager.programs-desktops-noctaliahyprland = {
-    wayland.windowManager.hyprland = {
-      enable = true;
-      package = null;
-      portalPackage = null;
-    };
     xdg.configFile."hyprland" = {
       recursive = true;
       source = ./dotfiles;
