@@ -7,30 +7,33 @@ hl.bind("ALT + Tab", function()
     hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
 end, { repeating = true })
 
-local function toggle_workspace_floating()
+local allfloat_state = {}
+local function toggle_workspace_allfloat()
     local workspace = hl.get_active_workspace()
-    if workspace == nil then
-        return
-    end
+    if workspace == nil then return end
+
+    local id = workspace.id
+    local turning_on = not allfloat_state[id]
+    allfloat_state[id] = turning_on
 
     local windows = hl.get_workspace_windows(workspace)
-    local make_floating = false
-
     for _, window in ipairs(windows) do
-        if not window.floating then
-            make_floating = true
-            break
+        if turning_on and not window.floating then
+            hl.dispatch(hl.dsp.window.float({ action = "set", window = window }))
+        elseif not turning_on and window.floating then
+            hl.dispatch(hl.dsp.window.float({ action = "unset", window = window }))
         end
     end
 
-    local action = make_floating and "set" or "unset"
-    for _, window in ipairs(windows) do
-        hl.dispatch(hl.dsp.window.float({ action = action, window = window }))
-    end
+    hl.window_rule({
+        name = "allfloat_ws_" .. tostring(id),
+        match = { workspace = tostring(id) },
+        float = turning_on,
+    })
 end
 
 hl.bind(config.mainMod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(config.mainMod .. " + ALT + SPACE", toggle_workspace_floating)
+hl.bind(config.mainMod .. " + ALT + SPACE", toggle_workspace_allfloat)
 
 hl.bind(config.mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(config.mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
