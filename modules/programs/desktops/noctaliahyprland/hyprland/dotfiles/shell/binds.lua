@@ -34,6 +34,8 @@ end
 
 hl.bind(config.mainMod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(config.mainMod .. " + ALT + SPACE", toggle_workspace_allfloat)
+hl.bind(config.mainMod .. " + SHIFT + I", hl.dsp.layout("togglesplit"))
+hl.bind(config.mainMod .. " + P", hl.dsp.window.pseudo())
 
 hl.bind(config.mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(config.mainMod .. " + L", hl.dsp.focus({ direction = "right" }))

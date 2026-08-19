@@ -1,4 +1,5 @@
 require("appearance.decoration")
+require("appearance.dwindle")
 require("appearance.general")
 require("appearance.monitor")
 require("appearance.misc")
