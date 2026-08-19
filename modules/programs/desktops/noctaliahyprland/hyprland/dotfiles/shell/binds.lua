@@ -2,6 +2,7 @@ local config = require("shell.config")
 
 hl.bind(config.mainMod .. " + Return", hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mainMod .. " + Q", hl.dsp.window.close())
+hl.bind("ALT + Tab", hl.dsp.exec_cmd(config.ipc .. "window-switcher"))
 
 hl.bind(config.mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(config.mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
