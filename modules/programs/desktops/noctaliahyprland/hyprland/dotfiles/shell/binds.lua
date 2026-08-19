@@ -49,6 +49,9 @@ hl.bind(config.mainMod .. " + SHIFT + L", hl.dsp.window.resize({ x = config.resi
 hl.bind(config.mainMod .. " + SHIFT + K", hl.dsp.window.resize({ x = 0, y = -config.resizeUnit, relative = true }))
 hl.bind(config.mainMod .. " + SHIFT + J", hl.dsp.window.resize({ x = 0, y = config.resizeUnit, relative = true }))
 
+hl.bind(config.mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind(config.mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
 for i = 1, 10 do
     local key = i % 10
     hl.bind(config.mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
