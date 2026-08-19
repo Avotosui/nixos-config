@@ -64,3 +64,6 @@ for i = 1, 10 do
     hl.bind(config.mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
     hl.bind(config.mainMod .. " + CTRL + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
 end
+
+hl.bind(config.mainMod .. " + Tab", hl.dsp.focus({ workspace = "m+1" }))
+hl.bind(config.mainMod .. " + SHIFT + Tab", hl.dsp.focus({ workspace = "m-1" }))
