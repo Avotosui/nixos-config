@@ -4,6 +4,31 @@ hl.bind(config.mainMod .. " + Return", hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mainMod .. " + Q", hl.dsp.window.close())
 hl.bind("ALT + Tab", hl.dsp.exec_cmd(config.ipc .. "window-switcher"))
 
+local function toggle_workspace_floating()
+    local workspace = hl.get_active_workspace()
+    if workspace == nil then
+        return
+    end
+
+    local windows = hl.get_workspace_windows(workspace)
+    local make_floating = false
+
+    for _, window in ipairs(windows) do
+        if not window.floating then
+            make_floating = true
+            break
+        end
+    end
+
+    local action = make_floating and "set" or "unset"
+    for _, window in ipairs(windows) do
+        hl.dispatch(hl.dsp.window.float({ action = action, window = window }))
+    end
+end
+
+hl.bind(config.mainMod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(config.mainMod .. " + ALT + SPACE", toggle_workspace_floating)
+
 hl.bind(config.mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(config.mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(config.mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
