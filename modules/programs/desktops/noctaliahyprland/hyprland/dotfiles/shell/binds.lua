@@ -45,6 +45,7 @@ hl.bind(config.mainMod .. " + CTRL + L", hl.dsp.window.move({ direction = "right
 hl.bind(config.mainMod .. " + CTRL + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(config.mainMod .. " + CTRL + J", hl.dsp.window.move({ direction = "down" }))
 
+hl.bind(config.mainMod .. " + G", hl.dsp.group.toggle())
 hl.bind(config.mainMod .. " + ALT + H", hl.dsp.window.swap({ direction = "left" }))
 hl.bind(config.mainMod .. " + ALT + L", hl.dsp.window.swap({ direction = "right" }))
 hl.bind(config.mainMod .. " + ALT + K", hl.dsp.window.swap({ direction = "up" }))
