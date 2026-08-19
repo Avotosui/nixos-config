@@ -22,3 +22,10 @@ hl.bind(config.mainMod .. " + SHIFT + H", hl.dsp.window.resize({ x = -config.res
 hl.bind(config.mainMod .. " + SHIFT + L", hl.dsp.window.resize({ x = config.resizeUnit, y = 0, relative = true }))
 hl.bind(config.mainMod .. " + SHIFT + K", hl.dsp.window.resize({ x = 0, y = -config.resizeUnit, relative = true }))
 hl.bind(config.mainMod .. " + SHIFT + J", hl.dsp.window.resize({ x = 0, y = config.resizeUnit, relative = true }))
+
+for i = 1, 10 do
+    local key = i % 10
+    hl.bind(config.mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+    hl.bind(config.mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+    hl.bind(config.mainMod .. " + CTRL + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
+end
