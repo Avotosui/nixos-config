@@ -2,7 +2,10 @@ local config = require("shell.config")
 
 hl.bind(config.mainMod .. " + Return", hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mainMod .. " + Q", hl.dsp.window.close())
-hl.bind("ALT + Tab", hl.dsp.exec_cmd(config.ipc .. "window-switcher"))
+hl.bind("ALT + Tab", function()
+    hl.dispatch(hl.dsp.window.cycle_next())
+    hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
+end, { repeating = true })
 
 local function toggle_workspace_floating()
     local workspace = hl.get_active_workspace()
