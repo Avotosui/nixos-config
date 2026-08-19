@@ -2,6 +2,7 @@ require("appearance.decoration")
 require("appearance.general")
 require("appearance.monitor")
 require("appearance.misc")
+require("appearance.workspace")
 
 require("shell.audio")
 require("shell.binds")
