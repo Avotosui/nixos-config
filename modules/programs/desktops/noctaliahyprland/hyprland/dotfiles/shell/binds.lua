@@ -2,6 +2,7 @@ local config = require("shell.config")
 
 hl.bind(config.mainMod .. " + Return", hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(config.mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind("ALT + Tab", function()
     hl.dispatch(hl.dsp.window.cycle_next())
     hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
