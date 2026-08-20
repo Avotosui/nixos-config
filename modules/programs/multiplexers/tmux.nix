@@ -13,6 +13,8 @@
 
         battery
         cpu
+
+        resurrect
       ];
 
       extraConfig = ''
