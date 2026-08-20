@@ -9,6 +9,7 @@
     programs.zsh = {
       enable = true;
       dotDir = "${config.xdg.configHome}/zsh";
+      defaultKeymap = "viins";
       enableCompletion = true;
       autosuggestion = {
         enable = true;
