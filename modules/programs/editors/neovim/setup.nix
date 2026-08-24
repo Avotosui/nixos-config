@@ -12,6 +12,7 @@
         friendly-snippets
         mini-nvim
         netrw-nvim
+        nvim-lspconfig
         render-markdown-nvim
 
         nvim-treesitter.withAllGrammars
