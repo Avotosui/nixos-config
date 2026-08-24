@@ -4,6 +4,8 @@
       alejandra
       nil
 
+      basedpyright
+
       bash-language-server
 
       cargo
@@ -20,6 +22,8 @@
       taplo
 
       vscode-css-languageserver
+
+      vscode-json-languageserver
 
       vtsls
 

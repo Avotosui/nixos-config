@@ -7,7 +7,9 @@ vim.lsp.config("*", { capabilities = capabilities })
 
 vim.lsp.enable({
     "bashls",
+    "basedpyright",
     "cssls",
+    "jsonls",
     "lua_ls",
     "nil_ls",
     "rust_analyzer",
