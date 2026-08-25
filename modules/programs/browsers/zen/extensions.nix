@@ -26,9 +26,9 @@ in {
           id = "bitwarden-password-manager";
           pinned = true;
         };
-        # about:debugging#/runtime/this-firefox
         "uBlock0@raymondhill.net" = "ublock-origin";
         "@windscribeff" = "windscribe";
+        "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = "vimium-ff";
         "{0814291e-c531-4741-a8e7-9a3e8f62bf71}" = "remove-youtube-tracking";
         "{3579f63b-d8ee-424f-bbb6-6d0ce3285e6a}" = "chameleon-ext";
         "{4590d8b8-3569-46e3-a571-cabfbaeab2c1}" = "no-youtube-shorts";
