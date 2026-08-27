@@ -15,6 +15,8 @@
       rustc
       rustfmt
 
+      java-language-server
+
       lua-language-server
 
       superhtml

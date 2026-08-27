@@ -10,6 +10,7 @@ vim.lsp.enable({
     "basedpyright",
     "cssls",
     "jsonls",
+    "java_language_server",
     "lua_ls",
     "nil_ls",
     "rust_analyzer",
