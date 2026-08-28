@@ -10,7 +10,7 @@
       programs-desktops-noctaliahyprland
 
       programs-packagemanagers-nix
-      programs-security-openssh
+      programs-networking-openssh
       programs-security-sops
       programs-shells-zsh
 
