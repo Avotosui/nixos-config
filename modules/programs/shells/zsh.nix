@@ -15,7 +15,10 @@
         enable = true;
         strategy = [];
       };
-      history.size = 0;
+      history = {
+        size = 10000;
+        save = 10000;
+      };
 
       setOptions = [
         "EXTENDED_GLOB"
