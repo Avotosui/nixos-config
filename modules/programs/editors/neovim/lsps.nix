@@ -15,7 +15,8 @@
       rustc
       rustfmt
 
-      java-language-server
+      jdk25
+      jdt-language-server
 
       lua-language-server
 
