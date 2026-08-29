@@ -39,6 +39,8 @@
 
       programs-multiplexers-tmux
 
+      programs-networking-wget
+
       programs-organization-bat
       programs-organization-file
       programs-organization-kondo
