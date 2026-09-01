@@ -15,6 +15,8 @@
       rustc
       rustfmt
 
+      gcc
+
       jdk25
       jdt-language-server
 

@@ -6,3 +6,4 @@ end)
 
 hl.bind(config.mainMod .. " + D", hl.dsp.exec_cmd(config.ipc .. "panel-toggle launcher"))
 hl.bind(config.mainMod .. " + S", hl.dsp.exec_cmd(config.ipc .. "panel-toggle control-center"))
+hl.bind(config.mainMod .. " + grave", hl.dsp.exec_cmd(config.ipc .. "panel-toggle session"))
