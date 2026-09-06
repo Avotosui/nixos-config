@@ -42,6 +42,7 @@
       programs-networking-wget
 
       programs-organization-bat
+      programs-organization-fd
       programs-organization-file
       programs-organization-kondo
       programs-organization-trash

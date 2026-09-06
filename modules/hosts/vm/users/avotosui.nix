@@ -33,6 +33,7 @@
       programs-multiplexers-tmux
 
       programs-organization-bat
+      programs-organization-fd
       programs-organization-file
       programs-organization-trash
       programs-organization-tree
