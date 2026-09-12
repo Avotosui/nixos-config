@@ -11,12 +11,6 @@
 
         lua-language-server
       ];
-
-      shellHook = ''
-        if [ -z "$ZSH_VERSION" ]; then
-          exec zsh
-        fi
-      '';
     };
   };
 }

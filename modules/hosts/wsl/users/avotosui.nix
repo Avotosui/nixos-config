@@ -27,6 +27,8 @@
 
       programs-customization-starship
 
+      programs-development-direnv
+
       programs-editors-neovim
 
       programs-multimedia-images-magick
