@@ -9,6 +9,7 @@ vim.lsp.enable({
     "bashls",
     "basedpyright",
     "cssls",
+    "clangd",
     "jsonls",
     "jdtls",
     "lua_ls",
