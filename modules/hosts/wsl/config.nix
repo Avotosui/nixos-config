@@ -10,6 +10,7 @@
       programs-packagemanagers-nix
 
       programs-editors-vim
+      programs-fhscompat-nixld
       programs-security-sops
       programs-shells-zsh
 

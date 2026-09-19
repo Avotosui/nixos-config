@@ -31,6 +31,8 @@
 
       programs-editors-neovim
 
+      programs-fhscompat-nixalien
+
       programs-multimedia-images-magick
       programs-multimedia-videos-ffmpeg
 
@@ -62,7 +64,6 @@
 
       programs-utilities-atuin
       programs-utilities-fzf
-      programs-utilities-nixalien
       programs-utilities-comma
 
       programs-versioncontrol-git
