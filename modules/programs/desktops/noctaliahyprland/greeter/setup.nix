@@ -1,12 +1,11 @@
-{inputs, ...}: {
+{
   flake.modules.nixos.programs-desktops-noctaliahyprland = {
-    imports = [
-      inputs.noctalia-greeter.nixosModules.default
-    ];
-
-    programs.noctalia-greeter = {
+    services.displayManager.noctalia-greeter = {
       enable = true;
-      greeter-args = ''--session "Hyprland (uwsm-managed)"'';
+      extraArgs = [
+        "--session"
+        "Hyprland (uwsm-managed)"
+      ];
     };
   };
 }

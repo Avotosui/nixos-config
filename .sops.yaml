@@ -1,42 +1,56 @@
 keys:
   - &admin age1efpanz9atyaqd7rlhzvkhc8g0grwmcsfl6p095lvetxzx3rkrcrqzu9sfc
-  - &root-wsl age1ddrda3lq0e3j0qmfnapakcz9agvz9kpjwecm6xv435f2slfxfvwsd9d0nr
+  - &root-fw13p age1ruj55d0vm2yg537w7hv4mw4yctnecltu4xfy877mly4y5g9epykqeytq63
   - &root-vm age13ut99sfvxgyvpr2zr857gk8lv029580x7v9vayvvmfwskmguuunqarrgfu
-  - &avotosui-wsl age1cmdk7zhzy5pj3nd2zfsv06m30duk9lp556k9we2pyptlvsn99ywqmfx6fp
+  - &root-wsl age1ddrda3lq0e3j0qmfnapakcz9agvz9kpjwecm6xv435f2slfxfvwsd9d0nr
+  - &avotosui-fw13p age159j37p5waexg454sk56msaceygdntj2kluuv4n0lx2ll0c4zly3qk9kpwy
   - &avotosui-vm age1y7glju274pg9nsnkmp2tps02l4eyw5xpvpqmy4j3hg2xuq35zpwq2h0ll8
+  - &avotosui-wsl age1cmdk7zhzy5pj3nd2zfsv06m30duk9lp556k9we2pyptlvsn99ywqmfx6fp
 creation_rules:
+  - path_regex: ^secrets/root/fw13p/.+$
+    key_groups:
+      - age:
+        - *admin
+        - *root-fw13p
+  - path_regex: ^secrets/root/vm/.+$
+    key_groups:
+      - age:
+        - *admin
+        - *root-vm
   - path_regex: ^secrets/root/wsl/.+$
     key_groups:
       - age:
           - *admin
           - *root-wsl
-  - path_regex: ^secrets/root/vm/.+$
-    key_groups: 
-      - age:
-        - *admin
-        - *root-vm
   - path_regex: ^secrets/root/[^/]+$
     key_groups:
       - age:
           - *admin
-          - *root-wsl
+          - *root-fw13p
           - *root-vm
-  - path_regex: ^secrets/home/wsl/.+$
+          - *root-wsl
+  - path_regex: ^secrets/home/fw13p/.+$
     key_groups:
       - age:
           - *admin
-          - *avotosui-wsl
+          - *avotosui-fw13p
   - path_regex: ^secrets/home/vm/.+$
     key_groups:
       - age:
           - *admin
           - *avotosui-vm
-  - path_regex: ^secrets/home/[^/]+$
+  - path_regex: ^secrets/home/wsl/.+$
     key_groups:
       - age:
           - *admin
           - *avotosui-wsl
+  - path_regex: ^secrets/home/[^/]+$
+    key_groups:
+      - age:
+          - *admin
+          - *avotosui-fw13p
           - *avotosui-vm
+          - *avotosui-wsl
   - path_regex: ^secrets/.+$
     key_groups:
       - age:

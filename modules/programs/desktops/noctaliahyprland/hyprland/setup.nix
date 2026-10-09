@@ -5,7 +5,7 @@
       withUWSM = true;
       xwayland.enable = true;
     };
-    environment.sessionVariables.LIBGL_ALWAYS_SOFTWARE = "1"; # VM-ONLY delete later
+    # environment.sessionVariables.LIBGL_ALWAYS_SOFTWARE = "1"; # VM-ONLY delete later
   };
 
   flake.modules.homeManager.programs-desktops-noctaliahyprland = {
