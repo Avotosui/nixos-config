@@ -1,6 +1,9 @@
 {
   flake.modules.nixos.programs-desktops-noctaliahyprland = {
-    services.logind.settings.Login.HandleLidSwitch = "ignore";
+    services.logind.settings.Login = {
+      HandleLidSwitch = "ignore";
+      HandleLidSwitchExternalPower = "ignore";
+    };
   };
 
   flake.modules.homeManager.programs-desktops-noctaliahyprland = {pkgs, ...}: {

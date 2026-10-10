@@ -54,10 +54,14 @@ hl.bind(config.mainMod .. " + ALT + L", hl.dsp.window.swap({ direction = "right"
 hl.bind(config.mainMod .. " + ALT + K", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(config.mainMod .. " + ALT + J", hl.dsp.window.swap({ direction = "down" }))
 
-hl.bind(config.mainMod .. " + SHIFT + H", hl.dsp.window.resize({ x = -config.resizeUnit, y = 0, relative = true }))
-hl.bind(config.mainMod .. " + SHIFT + L", hl.dsp.window.resize({ x = config.resizeUnit, y = 0, relative = true }))
-hl.bind(config.mainMod .. " + SHIFT + K", hl.dsp.window.resize({ x = 0, y = -config.resizeUnit, relative = true }))
-hl.bind(config.mainMod .. " + SHIFT + J", hl.dsp.window.resize({ x = 0, y = config.resizeUnit, relative = true }))
+hl.bind(config.mainMod .. " + SHIFT + H", hl.dsp.window.resize({ x = -config.resizeUnit, y = 0, relative = true }),
+    { repeating = true })
+hl.bind(config.mainMod .. " + SHIFT + L", hl.dsp.window.resize({ x = config.resizeUnit, y = 0, relative = true }),
+    { repeating = true })
+hl.bind(config.mainMod .. " + SHIFT + K", hl.dsp.window.resize({ x = 0, y = -config.resizeUnit, relative = true }),
+    { repeating = true })
+hl.bind(config.mainMod .. " + SHIFT + J", hl.dsp.window.resize({ x = 0, y = config.resizeUnit, relative = true }),
+    { repeating = true })
 
 hl.bind(config.mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(config.mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
