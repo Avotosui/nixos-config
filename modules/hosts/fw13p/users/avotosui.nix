@@ -21,6 +21,7 @@
 
   flake.modules.homeManager.hosts-fw13p-users-avotosui = {
     imports = with self.modules.homeManager; [
+      programs-browsers-brave
       programs-browsers-zen
 
       programs-compression-p7zip
