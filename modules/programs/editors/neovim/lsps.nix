@@ -1,18 +1,18 @@
 {
   flake.modules.homeManager.programs-editors-neovim = {pkgs, ...}: {
     home.packages = with pkgs; [
-        alejandra
-        nil
+      alejandra
+      nil
 
-        bash-language-server
+      bash-language-server
 
-        lua-language-server
+      lua-language-server
 
-        taplo
+      taplo
 
-        vscode-json-languageserver
+      vscode-json-languageserver
 
-        yaml-language-server
+      yaml-language-server
     ];
   };
 }

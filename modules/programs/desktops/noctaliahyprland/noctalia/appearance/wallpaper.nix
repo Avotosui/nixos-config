@@ -1,4 +1,4 @@
-{self, ...}: let 
+{self, ...}: let
   avatars = "${self}/assets/avatars";
 in {
   flake.modules.homeManager.programs-desktops-noctaliahyprland = {config, ...}: {

@@ -41,6 +41,10 @@
 
       programs-fhscompat-nixalien
 
+      programs-fun-areofylfetch
+      programs-fun-fastfetch
+      programs-fun-onefetch
+
       programs-monitoring-btop
       programs-monitoring-dmidecode
       programs-monitoring-nvtop

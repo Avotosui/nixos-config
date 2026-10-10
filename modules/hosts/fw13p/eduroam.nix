@@ -1,6 +1,6 @@
 {self, ...}: {
   flake.modules.nixos.hosts-fw13p = {config, ...}: {
-    systemd.services.wpa_supplicant.serviceConfig.BindReadOnlyPaths = [ "/run/secrets/wifi/eduroam" ];
+    systemd.services.wpa_supplicant.serviceConfig.BindReadOnlyPaths = ["/run/secrets/wifi/eduroam"];
     networking.networkmanager.ensureProfiles = {
       environmentFiles = [
         config.sops.templates."eduroam.env".path
@@ -27,7 +27,9 @@
           ca-cert = config.sops.secrets."wifi/eduroam/ca-cert".path;
           client-cert = config.sops.secrets."wifi/eduroam/eduroam-private".path;
           domain-suffix-match = "$EDUROAM_DOMAIN_SUFFIX_MATCH";
-          private-key = config.sops.secrets."wifi/eduroam/eduroam-private".path; private-key-password = "$EDUROAM_KEY_PASSWORD"; private-key-password-flags = "0";
+          private-key = config.sops.secrets."wifi/eduroam/eduroam-private".path;
+          private-key-password = "$EDUROAM_KEY_PASSWORD";
+          private-key-password-flags = "0";
         };
         ipv4.method = "auto";
         ipv6.method = "auto";
@@ -57,11 +59,11 @@
         inherit sopsFile;
       };
       "wifi/eduroam/eduroam-private" = {
-          sopsFile = "${self}/secrets/root/${config.networking.hostName}/eduroam.p12";
-          format = "binary";
-          owner = "wpa_supplicant";
-          mode = "0400";
-          path = "/etc/wpa_supplicant/eduroam-private.p12";
+        sopsFile = "${self}/secrets/root/${config.networking.hostName}/eduroam.p12";
+        format = "binary";
+        owner = "wpa_supplicant";
+        mode = "0400";
+        path = "/etc/wpa_supplicant/eduroam-private.p12";
       };
       "wifi/eduroam/identity" = {
         inherit sopsFile;
