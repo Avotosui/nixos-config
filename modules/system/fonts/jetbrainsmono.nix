@@ -1,5 +1,5 @@
 {
-  flake.modules.nixos.system-fonts-jetbrainsmono = {pkgs, ...}: {
-    fonts.packages = with pkgs; [nerd-fonts.jetbrains-mono];
+  flake.modules.homeManager.system-fonts-jetbrainsmono = {pkgs, ...}: {
+    home.packages = with pkgs; [nerd-fonts.jetbrains-mono];
   };
 }

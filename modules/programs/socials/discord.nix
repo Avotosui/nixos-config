@@ -1,5 +1,5 @@
 {
-  flake.modules.homeManager.programs-socials-vencord = {
+  flake.modules.homeManager.programs-socials-discord = {
     programs.vesktop = {
       enable = true;
 

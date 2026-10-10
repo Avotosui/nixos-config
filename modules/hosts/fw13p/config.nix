@@ -7,20 +7,20 @@
     imports = with self.modules.nixos; [
       hosts-fw13p-users-avotosui
 
-      programs-packagemanagers-nix
-
       programs-desktops-noctaliahyprland
-
       programs-fhscompat-nixld
-
-      programs-packagemanagers-nix
+      programs-music-librepods
       programs-networking-openssh
+      programs-packagemanagers-flatpak
+      programs-packagemanagers-nix
+      programs-productivity-at
+      programs-productivity-kdeconnect
       programs-security-sops
       programs-shells-zsh
 
-      system-fonts-jetbrainsmono
       system-hardware-audio
       system-hardware-network
+      system-hardware-uinput
       system-locale
       system-peripherals-bluetooth
       system-peripherals-printing
@@ -41,6 +41,7 @@
       xserver.xkb = {
         layout = "us";
         variant = "";
+        options = "caps:swapescape";
       };
     };
 
