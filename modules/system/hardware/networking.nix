@@ -1,5 +1,5 @@
-{
-  flake.modules.nixos.system-hardware-network = {
+{self, ...}: {
+  flake.modules.nixos.system-hardware-network = {config, ...}: {
     networking.networkmanager.enable = true;
   };
 

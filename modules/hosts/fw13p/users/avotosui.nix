@@ -51,6 +51,8 @@
       programs-security-ssh
       programs-security-sshagent
 
+      programs-study-anki
+
       programs-terminals-kitty
 
       programs-utilities-atuin
