@@ -49,8 +49,6 @@
   };
 
   flake.nixosConfigurations.fw13p = inputs.nixpkgs.lib.nixosSystem {
-    modules = [
-      self.modules.nixos.hosts-fw13p
-    ];
+    modules = [self.modules.nixos.hosts-fw13p];
   };
 }
