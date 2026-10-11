@@ -19,6 +19,7 @@
       programs-shells-zsh
 
       system-hardware-audio
+      system-hardware-fprintd
       system-hardware-network
       system-hardware-uinput
       system-locale
