@@ -6,6 +6,7 @@ hl.config({
         scroll_method = "2fg",
         touchpad = {
             natural_scroll = true,
+            scroll_factor = 0.6,
         },
     },
 })
