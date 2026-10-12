@@ -36,6 +36,7 @@
       programs-desktops-noctaliahyprland
 
       programs-development-direnv
+      programs-development-stm32
 
       programs-editors-neovim
       programs-editors-obsidian
@@ -71,6 +72,8 @@
       programs-networking-aria2
       programs-networking-ookla
       programs-networking-wget
+
+      programs-officesuites-libreoffice
 
       programs-organization-bat
       programs-organization-dua
