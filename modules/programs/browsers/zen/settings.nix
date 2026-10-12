@@ -13,7 +13,8 @@
       "browser.tabs.insertAfterCurrent" = true;
       "browser.tabs.selectOwnerOnClose" = false;
       "browser.tabs.warnOnClose" = true;
-      "browser.topsites.contile.enabled" = false; "browser.translations.enable" = false;
+      "browser.topsites.contile.enabled" = false;
+      "browser.translations.enable" = false;
       "browser.zoom.siteSpecific" = false;
 
       "devtools.debugger.remote-enabled" = true;

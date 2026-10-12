@@ -68,14 +68,18 @@
 
       programs-music-librepods
 
+      programs-networking-aria2
+      programs-networking-ookla
       programs-networking-wget
 
       programs-organization-bat
       programs-organization-dua
       programs-organization-dust
+      programs-organization-eza
       programs-organization-fd
       programs-organization-file
       programs-organization-kondo
+      programs-organization-ripgrep
       programs-organization-trash
       programs-organization-tree
       programs-organization-yazi
@@ -85,6 +89,7 @@
 
       programs-productivity-espeak
       programs-productivity-kdeconnect
+      programs-productivity-zbar
 
       programs-security-age
       programs-security-bitwarden

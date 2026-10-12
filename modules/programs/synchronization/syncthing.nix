@@ -1,7 +1,9 @@
 {
   flake.modules.nixos.programs-synchronization-syncthing = {
-    networking.firewall.allowedTCPPorts = [22000];
-    networking.firewall.allowedUDPPorts = [22000 21027];
+    networking.firewall = {
+      allowedTCPPorts = [22000];
+      allowedUDPPorts = [22000 21027];
+    };
   };
 
   flake.modules.homeManager.programs-synchronization-syncthing = {config, ...}: {
@@ -10,6 +12,10 @@
 
       cert = config.sops.secrets."syncthing/cert".path;
       key = config.sops.secrets."syncthing/key".path;
+      guiCredentials = {
+        username = config.home.username;
+        passwordFile = config.sops.secrets."syncthing/password".path;
+      };
 
       overrideDevices = true;
       overrideFolders = true;
@@ -21,7 +27,8 @@
           "ipam3" = {id = "GY5IKXX-7UNTHTL-GNGQU3I-LV4ZAZQ-KKTOHKP-7KRFAGS-IWIUT4G-H5LHEQI";};
         };
         folders = {
-          "obsidian-main" = {
+          "Obsidian Main" = {
+            id = "obsidian-main";
             path = "${config.xdg.userDirs.documents}/Obsidian/Main";
             devices = [
               "di"
@@ -36,6 +43,7 @@
     sops.secrets = {
       "syncthing/cert" = {};
       "syncthing/key" = {};
+      "syncthing/password" = {};
     };
   };
 }

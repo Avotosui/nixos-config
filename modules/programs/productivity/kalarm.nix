@@ -1,5 +1,5 @@
 {
-  flake.modules.programs-productivity-kalarm = {pkgs, ...}: {
+  flake.modules.homeManager.programs-productivity-kalarm = {pkgs, ...}: {
     home.packages = with pkgs.kdePackages; [kalarm];
   };
 }

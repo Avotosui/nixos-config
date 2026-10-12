@@ -1,5 +1,9 @@
 {
-  flake.modules.homeManager.programs-editors-obsidian = {config, pkgs, ...}: {
+  flake.modules.homeManager.programs-editors-obsidian = {
+    config,
+    pkgs,
+    ...
+  }: {
     programs.obsidian = {
       enable = true;
       cli.enable = true;
