@@ -17,6 +17,7 @@
       programs-productivity-kdeconnect
       programs-security-sops
       programs-shells-zsh
+      programs-synchronization-syncthing
 
       system-hardware-audio
       system-hardware-fprintd

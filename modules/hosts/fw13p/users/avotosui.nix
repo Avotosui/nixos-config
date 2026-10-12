@@ -51,9 +51,12 @@
       programs-monitoring-nvtop
       programs-monitoring-smartctl
 
+      programs-multimedia-documents-calibre
       programs-multimedia-documents-zathura
       programs-multimedia-images-gimp
       programs-multimedia-images-magick
+      programs-multimedia-images-oxipng
+      programs-multimedia-images-pngquant
       programs-multimedia-videos-ffmpeg
       programs-multimedia-videos-mpv
       programs-multimedia-videos-obs
@@ -95,6 +98,8 @@
       programs-socials-discord
 
       programs-study-anki
+
+      programs-synchronization-syncthing
 
       programs-terminals-kitty
 
