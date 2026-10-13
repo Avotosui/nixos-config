@@ -11,6 +11,7 @@
       programs-fhscompat-nixld
       programs-music-librepods
       programs-networking-openssh
+      programs-networking-tailscale
       programs-packagemanagers-flatpak
       programs-packagemanagers-nix
       programs-productivity-at

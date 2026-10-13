@@ -1,10 +1,16 @@
 {
   flake.modules.nixos.system-hardware-network = {config, ...}: {
-    networking.networkmanager = {
-      enable = true;
-      wifi = {
-        powersave = false;
+    networking = {
+      networkmanager = {
+        enable = true;
+        wifi = {
+          powersave = false;
+        };
       };
+
+      nftables.enable = true;
+
+      firewall.enable = true;
     };
   };
 
