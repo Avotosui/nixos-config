@@ -115,6 +115,7 @@
       programs-utilities-atuin
       programs-utilities-comma
       programs-utilities-fzf
+      programs-utilities-just
 
       programs-versioncontrol-forgejocli
       programs-versioncontrol-git
