@@ -14,8 +14,6 @@
           "divider"
           "media"
           "divider"
-          "tray"
-          "divider"
           "notifications"
         ];
         center = [];
