@@ -35,6 +35,7 @@
 
       programs-desktops-noctaliahyprland
 
+      programs-development-codex
       programs-development-direnv
       programs-development-stm32
 
