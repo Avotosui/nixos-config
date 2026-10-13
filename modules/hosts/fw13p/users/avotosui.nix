@@ -123,6 +123,7 @@
       programs-vpns-proton
 
       system-fonts-jetbrainsmono
+      system-fonts-microsoftfonts
       system-hardware-network
       system-hardware-uinput
       system-users-groups
