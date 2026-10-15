@@ -14,14 +14,13 @@
           "divider"
           "media"
           "divider"
+          "tray"
+          "divider"
           "notifications"
         ];
         center = [];
         end = [
           "clipboard"
-          "divider"
-          "caffeine"
-          "brightness"
           "divider"
           "volume_input"
           "volume_output"

@@ -6,6 +6,11 @@ in {
       backdrop.enabled = true;
 
       shell.avatar_path = "${avatars}/denia.webp";
+
+      wallpaper = {
+        enabled = true;
+        directory = "${config.xdg.userDirs.pictures}";
+      };
     };
   };
 }

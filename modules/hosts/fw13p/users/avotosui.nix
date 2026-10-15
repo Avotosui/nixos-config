@@ -28,6 +28,7 @@
       programs-compression-xz
       programs-compression-zip
 
+      programs-customization-mpvpaper
       programs-customization-starship
 
       programs-dataprocessing-jq

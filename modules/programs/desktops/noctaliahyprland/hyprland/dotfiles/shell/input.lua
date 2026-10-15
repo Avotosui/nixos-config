@@ -5,6 +5,7 @@ hl.config({
         kb_options = "caps:swapescape",
         scroll_method = "2fg",
         touchpad = {
+            disable_while_typing = true,
             natural_scroll = true,
             scroll_factor = 0.6,
         },

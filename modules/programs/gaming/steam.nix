@@ -1,5 +1,5 @@
 {
-  flake.modules.homeManager.programs-gaming-steam = {pkgs, ...}: {
+  flake.modules.nixos.programs-gaming-steam = {pkgs, ...}: {
     programs.steam = {
       enable = true;
       remotePlay.openFirewall = true;
@@ -8,6 +8,7 @@
       gamescopeSession.enable = true;
       extraCompatPackages = with pkgs; [
         proton-ge-bin
+        dwproton-bin
       ];
     };
 

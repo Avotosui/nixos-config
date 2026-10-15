@@ -9,6 +9,7 @@
 
       programs-desktops-noctaliahyprland
       programs-fhscompat-nixld
+      programs-gaming-steam
       programs-music-librepods
       programs-networking-openssh
       programs-networking-tailscale
