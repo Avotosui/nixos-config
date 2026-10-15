@@ -60,6 +60,7 @@
       programs-multimedia-images-magick
       programs-multimedia-images-oxipng
       programs-multimedia-images-pngquant
+      programs-multimedia-videos-davinciresolve
       programs-multimedia-videos-ffmpeg
       programs-multimedia-videos-mpv
       programs-multimedia-videos-obs
@@ -78,6 +79,7 @@
       programs-officesuites-libreoffice
 
       programs-organization-bat
+      programs-organization-dolphin
       programs-organization-dua
       programs-organization-dust
       programs-organization-eza
