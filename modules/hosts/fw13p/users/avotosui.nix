@@ -108,6 +108,7 @@
       programs-shells-zsh
 
       programs-socials-discord
+      programs-socials-zoom
 
       programs-study-anki
 
