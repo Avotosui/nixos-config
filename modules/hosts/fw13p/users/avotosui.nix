@@ -122,6 +122,7 @@
       programs-utilities-comma
       programs-utilities-fzf
       programs-utilities-just
+      programs-utilities-tldr
 
       programs-versioncontrol-forgejocli
       programs-versioncontrol-git
