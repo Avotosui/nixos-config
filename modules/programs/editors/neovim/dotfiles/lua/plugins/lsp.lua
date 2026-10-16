@@ -6,13 +6,14 @@ capabilities = vim.tbl_deep_extend("force", capabilities, MiniCompletion.get_lsp
 vim.lsp.config("*", { capabilities = capabilities })
 
 vim.lsp.enable({
-    "bashls",
     "basedpyright",
-    "cssls",
+    "bashls",
     "clangd",
+    "cssls",
     "jsonls",
     "jdtls",
     "lua_ls",
+    "neocmake",
     "nil_ls",
     "rust_analyzer",
     "superhtml",
