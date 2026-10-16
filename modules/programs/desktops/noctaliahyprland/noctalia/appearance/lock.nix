@@ -4,7 +4,7 @@
       blur_intensity = 0.0;
 
       transition = ["zoom"];
-      trasition_duration = 500;
+      transition_duration = 500;
     };
   };
 }
