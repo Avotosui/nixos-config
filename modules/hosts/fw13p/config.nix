@@ -21,6 +21,7 @@
       programs-shells-zsh
       programs-synchronization-syncthing
 
+      system-boot-limine
       system-hardware-audio
       system-hardware-fprintd
       system-hardware-network
@@ -32,10 +33,7 @@
       system-users-homemanager
     ];
 
-    boot.loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
+    boot.kernelPackages = pkgs.linuxPackages_latest;
 
     networking.hostName = "fw13p";
 
