@@ -11,7 +11,7 @@
           isEssential = true;
         };
         "New Tab" = {
-          id = "b582755f-b20e-494a-9c11-16c0b3f1dfa5";
+          id = "f44dfae9-830e-4b4e-b195-393163042a79";
           url = "about:newtab";
           position = 100;
           isEssential = true;
