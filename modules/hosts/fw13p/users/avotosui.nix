@@ -62,6 +62,7 @@
       programs-multimedia-images-pngquant
       programs-multimedia-videos-davinciresolve
       programs-multimedia-videos-ffmpeg
+      programs-multimedia-videos-kdenlive
       programs-multimedia-videos-losslesscut
       programs-multimedia-videos-mpv
       programs-multimedia-videos-obs
