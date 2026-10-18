@@ -24,6 +24,7 @@
       system-boot-limine
       system-hardware-audio
       system-hardware-fprintd
+      system-hardware-graphics
       system-hardware-network
       system-hardware-uinput
       system-locale

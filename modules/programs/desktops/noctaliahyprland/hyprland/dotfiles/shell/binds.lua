@@ -2,6 +2,7 @@ local config = require("shell.config")
 
 hl.bind(config.mainMod .. " + Return", hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mainMod .. " + B", hl.dsp.exec_cmd(config.browser))
+hl.bind(config.mainMod .. " + E", hl.dsp.exec_cmd(config.filemanager))
 hl.bind(config.mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(config.mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind("ALT + Tab", function()
