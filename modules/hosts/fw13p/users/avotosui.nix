@@ -121,7 +121,9 @@
       programs-utilities-comma
       programs-utilities-fzf
       programs-utilities-just
+      programs-utilities-payrespects
       programs-utilities-tldr
+      programs-utilities-zenity
 
       programs-versioncontrol-forgejocli
       programs-versioncontrol-git
