@@ -1,3 +1,4 @@
+require("appearance.animation")
 require("appearance.decoration")
 require("appearance.dwindle")
 require("appearance.general")
