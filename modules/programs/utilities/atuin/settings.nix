@@ -13,6 +13,7 @@
         "CLOUDFLARE_API_TOKEN"
         "api_token"
         "API_TOKEN"
+        "^ "
       ];
       keymap_mode = "vim-insert";
       prefers_reduced_motion = true;

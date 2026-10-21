@@ -8,15 +8,15 @@
 
     users.users.avotosui = {
       isNormalUser = true;
-      # hashedPasswordFile = config.sops.secrets."avotosui/user-password".path;
+      hashedPasswordFile = config.sops.secrets."avotosui/user-password".path;
       extraGroups = ["wheel"];
       shell = pkgs.zsh;
     };
 
-    # sops.secrets = {
-    #   "avotosui/user-password" = {};
-    #   "avotosui/user-password".neededForUsers = true;
-    # };
+    sops.secrets = {
+      "avotosui/user-password" = {};
+      "avotosui/user-password".neededForUsers = true;
+    };
   };
 
   flake.modules.homeManager.hosts-fw13p-users-avotosui = {
@@ -46,6 +46,7 @@
       programs-fhscompat-nixalien
 
       programs-fun-areofylfetch
+      programs-fun-bonsai
       programs-fun-fastfetch
       programs-fun-onefetch
 
