@@ -10,6 +10,12 @@
         bash-language-server
 
         lua-language-server
+
+        taplo
+
+        vscode-json-languageserver
+
+        yaml-language-server
       ];
     };
   };
