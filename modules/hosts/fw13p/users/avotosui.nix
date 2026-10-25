@@ -50,6 +50,8 @@
       programs-fun-fastfetch
       programs-fun-onefetch
 
+      programs-gaming-sober
+
       programs-monitoring-btop
       programs-monitoring-dmidecode
       programs-monitoring-nvtop
