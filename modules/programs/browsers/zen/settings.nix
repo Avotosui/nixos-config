@@ -23,6 +23,8 @@
 
       "findbar.highlightAll" = true;
 
+      "full-screen-api.warning.timeout" = 0;
+
       "general.smoothScroll.currentVelocityWeighting" = 0.0;
 
       "gfx.webrender.all" = true;
