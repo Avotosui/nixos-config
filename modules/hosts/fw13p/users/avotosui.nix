@@ -52,6 +52,9 @@
 
       programs-gaming-sober
 
+      programs-math-qalculate
+      programs-math-octave
+
       programs-monitoring-btop
       programs-monitoring-dmidecode
       programs-monitoring-nvtop
