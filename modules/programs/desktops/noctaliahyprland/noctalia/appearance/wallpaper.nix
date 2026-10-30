@@ -9,7 +9,7 @@ in {
 
       wallpaper = {
         enabled = true;
-        directory = "${config.xdg.userDirs.pictures}";
+        directory = "${config.xdg.userDirs.pictures}/Wallpapers";
       };
     };
   };
