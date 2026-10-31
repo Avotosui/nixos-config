@@ -5,10 +5,15 @@
       settings = {
         commit.gpgsign = true;
         gpg.format = "ssh";
-        init.defaultBranch = "main";
         include = {
           path = config.sops.secrets."git/user".path;
         };
+        init.defaultBranch = "main";
+        merge = {
+          conflictStyle = "diff3";
+          tool = "nvimdiff";
+        };
+        mergetool.prompt = false;
       };
     };
 
