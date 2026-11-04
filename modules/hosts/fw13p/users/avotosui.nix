@@ -81,6 +81,8 @@
       programs-music-librepods
 
       programs-networking-aria2
+      programs-networking-ethtool
+      programs-networking-lsusb
       programs-networking-ookla
       programs-networking-wget
 
