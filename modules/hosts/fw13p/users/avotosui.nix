@@ -39,6 +39,7 @@
       programs-development-codex
       programs-development-cross
       programs-development-direnv
+      programs-development-openocd
       programs-development-stm32
 
       programs-editors-neovim
