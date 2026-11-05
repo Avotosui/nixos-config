@@ -106,7 +106,6 @@
       programs-packagemanagers-flatpak
 
       programs-productivity-espeak
-      programs-productivity-kdeconnect
       programs-productivity-zbar
 
       programs-security-age

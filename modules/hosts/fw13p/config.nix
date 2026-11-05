@@ -16,7 +16,6 @@
       programs-packagemanagers-flatpak
       programs-packagemanagers-nix
       programs-productivity-at
-      programs-productivity-kdeconnect
       programs-security-sops
       programs-shells-zsh
       programs-synchronization-syncthing
