@@ -1,0 +1,28 @@
+{
+  flake.modules.homeManager.programs-study-anki = {pkgs, ...}: {
+    programs.anki.addons = with pkgs.ankiAddons; [
+      (fsrs4anki-helper.withConfig {
+        config = {
+          load_balance = true;
+          easy_dates = [];
+          easy_days_review_ratio_list = [1 1 1 1 1 1 1];
+          days_to_reschedule = 7;
+          auto_reschedule_after_sync = true;
+          auto_disperse_after_sync = true;
+          auto_disperse_when_review = false;
+          auto_disperse_after_reschedule = true;
+          mature_ivl = 21;
+          reschedule_threshold = 0;
+          debug_notify = false;
+          fsrs_stats = true;
+          display_memory_state = false;
+          auto_easy_days = false;
+          has_rated = false;
+          has_sponsored = false;
+          skip_manual_resched_cards = false;
+          show_steps_stats = true;
+        };
+      })
+    ];
+  };
+}

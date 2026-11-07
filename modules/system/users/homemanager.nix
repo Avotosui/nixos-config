@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  self,
+  inputs,
+  ...
+}: {
   flake.modules.nixos.system-users-homemanager = {config, ...}: {
     imports = [inputs.home-manager.nixosModules.home-manager];
 

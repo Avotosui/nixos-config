@@ -56,5 +56,5 @@
     isModule = file: file.hasExt "nix" && file.name != "flake.nix";
     modulesAt = path: lib.fileset.toList (lib.fileset.fileFilter isModule path);
   in
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {imports = modulesAt ./.;};
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {imports = modulesAt ./modules;};
 }

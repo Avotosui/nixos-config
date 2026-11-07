@@ -1,0 +1,54 @@
+{
+  flake.modules.homeManager.programs-study-anki = {pkgs, ...}: {
+    programs.anki.addons = with pkgs.local; [
+      (search-stats-extended.withConfig {
+        config = {
+          loadDelayMs = 100;
+          autoMemorisedStats = false;
+          autoRevlogStats = false;
+          barWidth = 600;
+          barHeight = 250;
+          piePercentages = true;
+          warnings = true;
+          trends = true;
+          forceLang = null;
+          graphMode = "Pie";
+          categories = {
+            graphOrder = false;
+            about = false;
+            due = true;
+            misc = true;
+            interval = true;
+            lapse = true;
+            repetition = true;
+            time = true;
+            fsrs = true;
+            rating = true;
+            load = true;
+            introduced = true;
+            timeMachine = true;
+            bad = true;
+          };
+
+          categoryOrder = [
+            "due"
+            "misc"
+            "rating"
+            "load"
+            "timeMachine"
+            "fsrs"
+            "forgettingCurve"
+            "introduced"
+            "interval"
+            "repetition"
+            "time"
+            "lapse"
+            "bad"
+          ];
+
+          alwaysAllTime = false;
+        };
+      })
+    ];
+  };
+}

@@ -1,8 +1,4 @@
-{
-  self,
-  inputs,
-  ...
-}: {
+{self, inputs, ...}: {
   flake.modules.nixos.hosts-fw13p = {pkgs, ...}: {
     imports = with self.modules.nixos; [
       hosts-fw13p-users-avotosui
@@ -36,6 +32,8 @@
     boot.kernelPackages = pkgs.linuxPackages_latest;
 
     networking.hostName = "fw13p";
+
+    nixpkgs.hostPlatform = "x86_64-linux";
 
     services = {
       libinput.enable = true;
