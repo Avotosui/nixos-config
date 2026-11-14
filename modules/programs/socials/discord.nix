@@ -6,9 +6,7 @@
       settings = {
         appBadge = true;
         autoStartMinimized = true;
-        clickTrayToShowHide = false;
-        enableTaskbarFlashing = false;
-        minimizeToTray = false;
+        clickTrayToShowHide = false; enableTaskbarFlashing = false; minimizeToTray = false;
         tray = true;
 
         audio = {
@@ -29,9 +27,9 @@
         arRPC = false;
         webRTCIPHandlingPolicy = "default_public_and_private_interfaces";
 
-        customTitleBar = false;
         disableSmoothScroll = true;
         enableMenu = false;
+        nativeTitleBar = true;
         staticTitle = true;
         transparencyOption = "none";
 
@@ -41,6 +39,7 @@
 
         hardwareAcceleration = true;
         hardwareVideoAcceleration = true;
+        hardwareVideoEncoding = true;
 
         openLinksWithElectron = false;
       };
@@ -78,9 +77,9 @@
             WebKeybinds.enabled = true;
             WebScreenShareFixes.enabled = true;
           };
-
-          useSystem = true;
         };
+
+        useSystem = false;
       };
     };
   };
