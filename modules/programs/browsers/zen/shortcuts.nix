@@ -1,7 +1,6 @@
 {
   flake.modules.homeManager.programs-browsers-zen = {
     programs.zen-browser.profiles.default = {
-      keyboardShortcutsVersion = 21;
       keyboardShortcuts = [
         {
           id = "addBookmarkAsKb";
