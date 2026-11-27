@@ -14,7 +14,6 @@
       programs-security-sops
       programs-shells-zsh
 
-      system-fonts-jetbrainsmono
       system-hardware-audio
       system-hardware-network
       system-locale

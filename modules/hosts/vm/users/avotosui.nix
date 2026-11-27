@@ -3,8 +3,7 @@
     config,
     pkgs,
     ...
-  }: {
-    home-manager.users.avotosui = self.modules.homeManager.hosts-vm-users-avotosui;
+  }: { home-manager.users.avotosui = self.modules.homeManager.hosts-vm-users-avotosui;
 
     users.users.avotosui = {
       isNormalUser = true;
@@ -54,6 +53,7 @@
 
       programs-versioncontrol-git
 
+      system-fonts-jetbrainsmono
       system-hardware-network
       system-users-groups
       system-xdg

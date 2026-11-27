@@ -80,6 +80,7 @@
       programs-multiplexers-tmux
 
       programs-music-librepods
+      programs-music-playerctl
 
       programs-networking-aria2
       programs-networking-ethtool

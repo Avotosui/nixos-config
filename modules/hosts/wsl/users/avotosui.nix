@@ -33,13 +33,14 @@
 
       programs-fhscompat-nixalien
 
+      programs-fun-fastfetch
+      programs-fun-onefetch
+
       programs-multimedia-images-magick
       programs-multimedia-videos-ffmpeg
 
       programs-monitoring-btop
-      programs-monitoring-fastfetch
       programs-monitoring-nvtop
-      programs-monitoring-onefetch
 
       programs-multiplexers-tmux
 
